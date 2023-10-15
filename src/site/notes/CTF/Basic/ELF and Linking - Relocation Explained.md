@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/CTF/Basic/ELF and Linking - Relocation Explained/","tags":["CTF/basic","TODO/need_to_upload"]}
+{"dg-publish":true,"permalink":"/CTF/Basic/ELF and Linking - Relocation Explained/","tags":["CTF/basic"]}
 ---
 
 # Reference
