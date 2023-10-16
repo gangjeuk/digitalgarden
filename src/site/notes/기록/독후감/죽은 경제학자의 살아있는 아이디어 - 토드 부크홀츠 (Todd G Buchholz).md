@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/기록/독후감/죽은 경제학자의 살아있는 아이디어 - 토드 부크홀츠 (Todd G Buchholz)/","title":"죽은 경제학자의 살아있는 아이디어","tags":["📚Book"]}
+{"dg-publish":true,"permalink":"/기록/독후감/죽은 경제학자의 살아있는 아이디어 - 토드 부크홀츠 (Todd G Buchholz)/","title":"죽은 경제학자의 살아있는 아이디어","tags":["📚Book"],"created":"2023-10-14","updated":"2023-10-14"}
 ---
 
 
