@@ -562,7 +562,7 @@ start 함수의
 ### global_var
 먼저 *global_var*을 대상으로 지금까지 정리한 내용을 이용하여 값을 계산해 보자.
 
-전체적은 구조는 다음과 같다.
+전체적인 구조는 다음과 같다.
 ![image-20231010151410269.png](/img/user/CTF/Basic/assets/ELF%20and%20Linking%20-%20Relocation%20Explained/image-20231010151410269.png)
 
 계산식은 다음과 같고
