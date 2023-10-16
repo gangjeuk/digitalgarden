@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/지식나눔/Vim 사용법 정리/"}
+{"dg-publish":true,"permalink":"/지식나눔/Vim 사용법 정리/","created":"2023-10-11"}
 ---
 
 
