@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/CTF/SECCON Beginners 2023/switchable_cat/","tags":["SECCON_Beginners_2023","crypto","Medium"]}
+{"dg-publish":true,"permalink":"/CTF/SECCON Beginners 2023/switchable_cat/","tags":["SECCON_Beginners_2023","crypto","Medium"],"created":"2023-09-10"}
 ---
 
 
