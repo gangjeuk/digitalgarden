@@ -1,0 +1,7 @@
+.markdown-preview-view, img[alt*="round"] {
+    max-width: 100%;
+    outline: none;
+    -webkit-filter: drop-shadow(10px 10px 10px rgba(8, 8, 8, 0.5)); /* the setting for the shadow effect */
+        background-clip: content-box,padding-box;
+        border-radius: 20px 20px 20px; /* the setting for the border rounding */
+}
