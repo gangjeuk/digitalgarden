@@ -3242,27 +3242,27 @@ body.theme-dark {
     margin-bottom: 0;
   }
 }
-// TAG 
-  .tag {
-    display: inline-block;
-    border: 2px solid white;
-    padding: 4px 7px;
-    margin: 3px 6px 3px 0;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: capitalize;
-    border-radius: 1rem;
-    transition: all 0.2s;
-    border-color: white;
-  }
+// TAG
+.tag {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 4px 7px;
+  margin: 3px 6px 3px 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  border-color: white;
+}
 
 //Hide GRAPH
 .graph {
   display: none;
 }
 
-//filetree of NOTES 
+//filetree of NOTES
 nav.filetree-sidebar {
   margin-top: 200px;
   height: auto;
@@ -3417,6 +3417,7 @@ body.theme-dark.notes {
         max-width: 360px;
         img {
           height: 340px;
+          width: 360px;
         }
         // Animation time
         transition: transform 250ms;
