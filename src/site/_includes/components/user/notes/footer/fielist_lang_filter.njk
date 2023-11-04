@@ -1,0 +1,17 @@
+<script>
+
+// When window loaded
+window.addEventListener('DOMContentLoaded', function () {
+  // Get site name by URL
+  var lang = window.location.pathname.split('/')[1]
+  for(var child of document.querySelector('.folder').children){
+    // Remove unmatched Language
+    if(child.querySelector('.folder > .foldername-wrapper').innerText.includes(lang) == false){
+      child.innerHTML = '';
+    }
+    else{
+      child.querySelector('.folder > .foldername-wrapper').remove();
+    }
+  }
+})
+</script>
