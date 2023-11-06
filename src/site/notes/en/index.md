@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":"false","dgShowFileTree":"false","dgShowToc":"false"}
+{"dg-publish":true,"permalink":"/en/index/","dgShowBacklinks":"false","dgShowLocalGraph":"false","dgShowFileTree":"false","dgShowToc":"false"}
 ---
 
 
@@ -9,12 +9,8 @@
 # Study
 <div class="study-covers">
 
-- [![kr/지식나눔/assets/옴시디언 사용법 정리/image-20231101191707762.png|image-20231101191707762.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/assets/%EC%98%B4%EC%8B%9C%EB%94%94%EC%96%B8%20%EC%82%AC%EC%9A%A9%EB%B2%95%20%EC%A0%95%EB%A6%AC/image-20231101191707762.png)](</kr/지식나눔/옴시디언 사용법 정리>)<div class=content-name>옴시디언 사용법 정리</div><div class=content-tags></div>
-- [![kr/지식나눔/Linux cmd/assets/Bash/image-20231101191458108.png|image-20231101191458108.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/Linux%20cmd/assets/Bash/image-20231101191458108.png)](</kr/지식나눔/Linux cmd/Bash>)<div class=content-name>Bash</div><div class=content-tags></div>
-- [![kr/CTF/Basic/assets/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/image-20231010161636907.png|image-20231010161636907.png](/img/user/kr/CTF/Basic/assets/ELF%20%ED%8C%8C%EC%9D%BC%20%ED%98%95%EC%8B%9D%EC%97%90%EC%84%9C%20%EC%9E%AC%EB%B0%B0%EC%B9%98(Relocation),%20%EB%A7%81%ED%82%B9(Linking)%20%EA%B9%8C%EC%A7%80/image-20231010161636907.png)](</kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지>)<div class=content-name>ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지</div><div class=content-tags>#CTF/basic</div>
-- [![kr/CTF/SECCON Beginners 2023/assets/image-20231101125526254.png|image-20231101125526254.png](/img/user/kr/CTF/SECCON%20Beginners%202023/assets/image-20231101125526254.png)](</kr/CTF/SECCON Beginners 2023/switchable_cat>)<div class=content-name>switchable_cat</div><div class=content-tags>#SECCON_Beginners_2023, #crypto, #Medium</div>
-- [![kr/CTF/SECCON Beginners 2023/assets/image-20231101125526254.png|image-20231101125526254.png](/img/user/kr/CTF/SECCON%20Beginners%202023/assets/image-20231101125526254.png)](</kr/CTF/picoCTF/SideChannel>)<div class=content-name>SideChannel</div><div class=content-tags>#forensics, #side_channel, #timing_based</div>
-- [![kr/지식나눔/assets/옴시디언 사용법 정리/image-20231101191707762.png|image-20231101191707762.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/assets/%EC%98%B4%EC%8B%9C%EB%94%94%EC%96%B8%20%EC%82%AC%EC%9A%A9%EB%B2%95%20%EC%A0%95%EB%A6%AC/image-20231101191707762.png)](</kr/지식나눔/옵시디언 & PARA>)<div class=content-name>옵시디언 & PARA</div><div class=content-tags></div>
+- [![kr/CTF/Basic/assets/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/image-20231010161636907.png|image-20231010161636907.png](/img/user/kr/CTF/Basic/assets/ELF%20%ED%8C%8C%EC%9D%BC%20%ED%98%95%EC%8B%9D%EC%97%90%EC%84%9C%20%EC%9E%AC%EB%B0%B0%EC%B9%98(Relocation),%20%EB%A7%81%ED%82%B9(Linking)%20%EA%B9%8C%EC%A7%80/image-20231010161636907.png)](</en/CTF/Basic/ELF Explained - From structure to Relocation & Linking>)<div class=content-name>ELF Explained - From structure to Relocation & Linking</div><div class=content-tags>#CTF/basic</div>
+- [\-](</en/index>)<div class=content-name>index</div><div class=content-tags></div>
 
 { .block-language-dataview}
 </div>
@@ -42,10 +38,4 @@
 { .block-language-dataview}
 
 
-
-
-
-
-# 💼  Projects
-- MYBOX
 
