@@ -10,8 +10,11 @@ window.addEventListener('DOMContentLoaded', function () {
       child.innerHTML = '';
     }
     else{
+      // If matched folder remove the parent folder 
       child.querySelector('.folder > .foldername-wrapper').remove();
       child.children[0].classList.remove('inner-folder')
+      // and dispath click event 
+      child.click()
     }
   }
 })
