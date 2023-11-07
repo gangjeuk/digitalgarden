@@ -1,0 +1,13 @@
+<script>
+
+// Window Loaded
+window.addEventListener('DOMContentLoaded', function()
+{
+  note_name = document.location.pathname.split('/')[2]
+  if(note_name == 'index'){
+      // Add notes class to HOMEPAGE
+      document.body.classList.add("notes");
+    }
+});
+
+</script>
