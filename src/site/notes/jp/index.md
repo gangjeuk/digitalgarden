@@ -9,9 +9,9 @@
 # Study
 <div class="study-covers">
 
+- [![kr/지식나눔/assets/LazyVim 설치 및 설정하기/image-20231111185327420.png|image-20231111185327420.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/assets/LazyVim%20%EC%84%A4%EC%B9%98%20%EB%B0%8F%20%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/image-20231111185327420.png)](</jp/知識共有/LazyVimのインストールから設定まで>)<div class=content-name>LazyVimのインストールから設定まで</div><div class=content-tags></div>
 - [![kr/CTF/Basic/assets/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/image-20231010161636907.png|image-20231010161636907.png](/img/user/kr/CTF/Basic/assets/ELF%20%ED%8C%8C%EC%9D%BC%20%ED%98%95%EC%8B%9D%EC%97%90%EC%84%9C%20%EC%9E%AC%EB%B0%B0%EC%B9%98(Relocation),%20%EB%A7%81%ED%82%B9(Linking)%20%EA%B9%8C%EC%A7%80/image-20231010161636907.png)](</jp/CTF/Basic/ELF ファイル形式からRelocation Linkingまで>)<div class=content-name>ELF ファイル形式からRelocation Linkingまで</div><div class=content-tags>#CTF/basic</div>
 - [\-](</jp/index>)<div class=content-name>index</div><div class=content-tags></div>
-- [![kr/지식나눔/assets/LazyVim 설치 및 설정하기/image-20231111185327420.png|image-20231111185327420.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/assets/LazyVim%20%EC%84%A4%EC%B9%98%20%EB%B0%8F%20%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/image-20231111185327420.png)](</jp/知識共有/LazyVimのインストールから設定まで>)<div class=content-name>LazyVimのインストールから設定まで</div><div class=content-tags></div>
 
 { .block-language-dataview}
 </div>
