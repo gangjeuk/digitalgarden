@@ -9,12 +9,11 @@
 # Study
 <div class="study-covers">
 
-- [![kr/지식나눔/assets/옴시디언 사용법 정리/image-20231101191707762.png|image-20231101191707762.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/assets/%EC%98%B4%EC%8B%9C%EB%94%94%EC%96%B8%20%EC%82%AC%EC%9A%A9%EB%B2%95%20%EC%A0%95%EB%A6%AC/image-20231101191707762.png)](</kr/지식나눔/옴시디언 사용법 정리>)<div class=content-name>옴시디언 사용법 정리</div><div class=content-tags></div>
-- [![kr/지식나눔/Linux cmd/assets/Bash/image-20231101191458108.png|image-20231101191458108.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/Linux%20cmd/assets/Bash/image-20231101191458108.png)](</kr/지식나눔/Linux cmd/Bash>)<div class=content-name>Bash</div><div class=content-tags></div>
-- [![kr/CTF/SECCON Beginners 2023/assets/image-20231101125526254.png|image-20231101125526254.png](/img/user/kr/CTF/SECCON%20Beginners%202023/assets/image-20231101125526254.png)](</kr/CTF/SECCON Beginners 2023/switchable_cat>)<div class=content-name>switchable_cat</div><div class=content-tags>#SECCON_Beginners_2023, #crypto, #Medium</div>
-- [![kr/CTF/SECCON Beginners 2023/assets/image-20231101125526254.png|image-20231101125526254.png](/img/user/kr/CTF/SECCON%20Beginners%202023/assets/image-20231101125526254.png)](</kr/CTF/picoCTF/SideChannel>)<div class=content-name>SideChannel</div><div class=content-tags>#forensics, #side_channel, #timing_based</div>
+- [![kr/지식나눔/assets/LazyVim 설치 및 설정하기/image-20231111185327420.png|image-20231111185327420.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/assets/LazyVim%20%EC%84%A4%EC%B9%98%20%EB%B0%8F%20%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/image-20231111185327420.png)](</kr/지식나눔/LazyVim 설치 및 설정하기>)<div class=content-name>LazyVim 설치 및 설정하기</div><div class=content-tags></div>
+- [\-](</kr/컴퓨터 공학 기초/컴퓨터의 시작, 계산기>)<div class=content-name>컴퓨터의 시작, 계산기</div><div class=content-tags>#Computer-Science</div>
+- [![kr/지식나눔/assets/Vim 사용법 정리/image-20231101192238972.png|image-20231101192238972.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/assets/Vim%20%EC%82%AC%EC%9A%A9%EB%B2%95%20%EC%A0%95%EB%A6%AC/image-20231101192238972.png)](</kr/지식나눔/Vim 사용법 정리>)<div class=content-name>Vim 사용법 정리</div><div class=content-tags></div>
 - [![kr/지식나눔/assets/옴시디언 사용법 정리/image-20231101191707762.png|image-20231101191707762.png](/img/user/kr/%EC%A7%80%EC%8B%9D%EB%82%98%EB%88%94/assets/%EC%98%B4%EC%8B%9C%EB%94%94%EC%96%B8%20%EC%82%AC%EC%9A%A9%EB%B2%95%20%EC%A0%95%EB%A6%AC/image-20231101191707762.png)](</kr/지식나눔/옵시디언 & PARA>)<div class=content-name>옵시디언 & PARA</div><div class=content-tags></div>
-- [\-](</kr/C 언어/목차>)<div class=content-name>목차</div><div class=content-tags></div>
+- [![kr/CTF/SECCON Beginners 2023/assets/image-20231101125526254.png|image-20231101125526254.png](/img/user/kr/CTF/SECCON%20Beginners%202023/assets/image-20231101125526254.png)](</kr/CTF/SECCON Beginners 2023/switchable_cat>)<div class=content-name>switchable_cat</div><div class=content-tags>#SECCON_Beginners_2023, #crypto, #Medium</div>
 
 { .block-language-dataview}
 </div>
