@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/en/Tips/LazyVim Install & Setup/","created":"2023-11-11"}
+{"dg-publish":true,"permalink":"/en/Tips/LazyVim Install & Setup/","tags":["Tips/LazyVim"],"created":"2023-11-11"}
 ---
 
 
