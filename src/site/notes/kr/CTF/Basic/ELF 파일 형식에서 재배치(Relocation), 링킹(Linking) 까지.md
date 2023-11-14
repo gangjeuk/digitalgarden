@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/","tags":["CTF/basic","TODO/got_plt_tls_파일내용과_같이_검토_필요"],"created":"2023-10-10","updated":"2023-10-28"}
+{"dg-publish":true,"permalink":"/kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/","tags":["TODO/got_plt_tls_파일내용과_같이_검토_필요","CTF/basic/ELF"],"created":"2023-10-10","updated":"2023-11-14"}
 ---
 
 # Reference
@@ -17,16 +17,18 @@ ELF(Executable and Linking Format)은 대표적으로 3가지 유형의 타입�
 3. *shared object file* → Linking 을 위한 데이터와 코드를 가지는 파일. 
 
 >[!info]
->여기서 Linking이란 
-> 1. Link editor 가 shared object file을 relocatable 또는 shared object file을 이용해 다른 object file을 생성하는 것
+>여기서 Linking이란. 말 그대로 연결해 주는 '것'을 의미한다.
+>우리가 흔히 사용하는 단어 중 라이브러리와의 링킹, 다이나믹 링킹에서 사용되는 '그' 링킹이다.
+>조금 더 자세히 용어를 풀어 설명하면 아래와 같다.
+> 1. Link editor 가 shared object file을  relocatable file 또는 shared object file을 이용해 다른 object file을 생성하는 것
 > 2. dynamic linker 가 프로세스를 생성하기 위해서 shared object file과 executable file을 합치는 것
 
 
-하지만, 결국 3가지 유형을 큰 그림으로 생각하면 결국 오브젝트 파일은 *Linking*과 *Execution* 이라는 큰 역할을 기준으로 구분할 수 있다.
+결국 3가지 유형은 *Linking*과 *Execution* 이라는 큰 역할을 기준으로 구분할 수 있다.
 
 역할을 기준으로 나타낸 그림을 살펴보면 아래와 같다
 
-![image-20231005122731689.png|center](/img/user/kr/CTF/Basic/assets/ELF%20%ED%8C%8C%EC%9D%BC%20%ED%98%95%EC%8B%9D%EC%97%90%EC%84%9C%20%EC%9E%AC%EB%B0%B0%EC%B9%98(Relocation),%20%EB%A7%81%ED%82%B9(Linking)%20%EA%B9%8C%EC%A7%80/image-20231005122731689.png)
+
 
 - ELF Header: 파일의 구성에 대한 ''road map''을 가진다
 	- ELF 파일 형식, 실행 머신의 아키텍처 등
@@ -52,8 +54,6 @@ Segment는 위에서 설명한 그대로 복수의 Section들로 구성된 구�
 | .got         | Global offset table         |
 | .bss         | Uninitialized data          |
 
-
-
 # 실습 준비
 ## Hello World!!(Executable file)
 아래에서 진행하는 실습을 위해서 간단한 바이너리를 생성해서 진행한다.
@@ -76,7 +76,7 @@ int main(){
 gcc hello.c -o hello
 ```
 ## Global(Linking)
-같이 Linking을 살펴보기 위해 간단한 바이너리를 생성하였다.
+또한, Linking을 살펴보기 위해 간단한 바이너리 하나 더 생성한다.
 
 프로그램은 아래와 같다.
 ```c
@@ -133,7 +133,7 @@ Elf64_Half e_shstrndx; /* Section name string table index */
 
 ```
 파일 헤더의 경우 
-- 매직넘버 - ELF...
+- 매직넘버: ELF...
 - 머신: x86, ARM, MIPS, ...
 - 운영체제: Linux, Unix, System V
 등의 정보를 가지고 있다.
@@ -406,7 +406,7 @@ Elf64_Addr st_value; /* Symbol value */
 Elf64_Xword st_size; /* Size of object (e.g., common) */
 } Elf64_Sym;
 ```
-각 Entry는 하나의 심볼에 대한 정보를 가지고 이름, 타입, 값, 어느 Section에 존재하는지(Section index)로 구성된다.
+각 Entry는 하나의 심볼에 대한 정보를 가지고 이름, 타입, 값, 어느 Section(Section index)에 존재하는지로 구성된다.
 ## Relocation Entry(.rela, .rel)
 다음으로 Relocation Section의 Entry는 다음과 같다.
 ```c
@@ -430,7 +430,20 @@ Rellocation Entry는 두 개의 종류로 구성되는데 실제로 Relocation�
 ## Address Calculation
 실제 주소의 계산은 [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#Relocation Entry(.rela, .rel)\|Relocation Entry]]장에서 설명한  r_info를 이용해서 이루어진다.
 
-r_info는 재배치를 수행할 위치의 심볼이 심볼의 몇 번째 엔트리에 있는지에 대한 정보와 ==어떻게 재배치할 것인지에 대한 정보를 가진다==.
+
+r_info는 재배치를 수행해야 하는 심볼 테이블 인덱스와 ==적용할 재배치 유형(어떻게 재배치할 것인지에 대한 정보)를 가진다==.
+
+>[!info]- r_info
+>구체적으로는 각 상위의 비트와 하위의 비트를 이용하여, 테이블의 인덱스와 타입 등을 나타낸다.
+>```c
+>#define ELF32_R_SYM(info)             ((info)>>8)
+>#define ELF32_R_TYPE(info)            ((unsigned char)(info))
+>#define ELF32_R_INFO(sym, type)       (((sym)<<8)+(unsigned char)(type))
+>#define ELF64_R_SYM(info)             ((info)>>32)
+>#define ELF64_R_TYPE(info)            ((Elf64_Word)(info))
+>#define ELF64_R_INFO(sym, type)       (((Elf64_Xword)(sym)<<32)+ (Elf64_Xword)(type))					
+>```																								
+
 
 x86의 경우 아래와 같은 재배치 방식이 존재한다.
 
@@ -438,21 +451,23 @@ x86의 경우 아래와 같은 재배치 방식이 존재한다.
 | ------------- | --------------------------- | ------------------------- |
 | R_X86_64_PC32 | 32                          | S+A-P                     |
 | R_X86_64_64   | 64                          | S+A                       |
-| ...           | ...                         | ...                       | 
-이 외에도 [[Thread Local Storage Explained\|TLS(Thread Local Storage)]]와 Dynamic Linking 등을 위한 다양한 방식이 존재한다.
+| ...           | ...                         | ...                       |
+
+
+이 외에도 [[kr/CTF/Basic/TLS(Thread Local Storage) 구조\|TLS(Thread Local Storage)]]와 Dynamic Linking 등을 위한 다양한 방식이 존재한다.
 
 여기서 등장하는 S, A, P는 각각
 - S: 재배치 후에 해당 심볼의 실제 위치
 	- 계산식: ([[kr/CTF/Basic/assets/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/st_value 의미\|st_value]]) + 심볼이 정의된 섹션이 로딩된 어드레스
 - P: 재배치 해야하는 부분의 위치
-	- 계산식: r_offset + 재배치를 수행하는 섹션이 로딩된 어드레스
+	- 계산식: r_offset + 재배치가 수행되는 섹션이 로딩된 어드레스
 - A: 더해지는 값 = r_addend
 
 이제 재배치에 사용되는 데이터의 종류와 쓰임새 그리고 재배치의 실제 메모리 주소값을 계산하는 방법까지 살펴보았다.
 
 이제 실제 계산이 실제로 어떻게 진행되는지 살펴보자.
 ## Procedure
-사용 프로그램으로는 [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#실습 준비\|2 번째 프로그램(Global)]]을 사용할 것이다.
+사용 프로그램으로는 [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#실습 준비\|Global]]을 사용할 것이다.
 
 먼저 readelf 프로그램으로 Section, Relocation entry에 대한 정보, Symbol Table에 대한 정보를 확인하자.
 
@@ -566,7 +581,7 @@ start 함수의
 
 우리가 원하는 궁극적인 목표는 메모리의 값의 변화이고, 구체적으로는 현재 실행 중인 명령어의 주소에서 목표가 되는 변수 또는 함수의 주소를 메모리의 값으로 넣어주는 것이다(생각보다 단순하다).
 
-func_A의 R_X86_64_PLT32 형식의 경우 Dynamic Linking와 관련된 Relocation이기 때문에 `global_var` 를 중심으로 살펴보도록 하자.
+func_A의 R_X86_64_PLT32 형식의 경우 Dynamic Linking와 관련된 형식이기 때문에 `global_var` 를 중심으로 살펴보도록 하자.
 ### global_var
 먼저 *global_var*을 대상으로 지금까지 정리한 내용을 이용하여 값을 계산해 보자.
 
@@ -575,7 +590,7 @@ func_A의 R_X86_64_PLT32 형식의 경우 Dynamic Linking와 관련된 Relocatio
 
 계산식은 다음과 같고
 Address: <span class="green">S</span> + <span class="blue">A</span> - <span class="yellow">P</span>  
-위에서 [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#Address Calculation\|주어진 식]]을 조금 더 풀어 쓰면 다음과 같다.
+위에서 [[en/CTF/Basic/ELF Explained - From structure to Relocation & Linking#Address Calculation\|주어진 식]]을 조금 더 풀어 쓰면 다음과 같다.
 $$
 \color{green} st\_value + .data \color{blue} + r\_append \color{yellow} - (r\_offset + .text )
 $$
@@ -605,18 +620,18 @@ $\text{0x72+0x76 = 0xE8}$ 로 *globar_var*의 주소를 가리키는 것을 알 
 ## 시작 전
 Dynamic Linking의 경우 이론적은 부분과 실제 동작하는 부분에서 Relocation과 차이가 존재한다.
 
-특히 Dynamic Linking을 들었을 때 생각하는 공유 라이브러리와의 링킹 과정의 경우 그 차이가 명확해진다.
+특히 Dynamic Linking이라는 단어를 들었을 보통 떠올리는 공유 라이브러리와의 링킹 과정을 살펴보면 그 차이가 명확해진다.
 
-차이가 발생하는 근본적인 이유는 Relocation의 경우 운영체제가 프로그램을 메모리 적재하는 과정에서 발생하고, 라이브러리와의 링킹은 프로그램이 동작하는 중에 발생한다.
+차이가 발생하는 근본적인 이유는 Relocation의 경우 운영체제가 프로그램을 메모리 적재하는 과정에서 발생하고, 라이브러리와의 링킹은 프로그램이 동작하는 중에 발생한기[^1] 때문이다.
 
-자세히 설명하면 이야기가 길어지고 동작 중이 아닌 프로그램 시작 시에 링킹이 일어나는 등 여러 설정에 따라서 다양한 케이스가 존재하기 때문에 Dynamic Linking의 경우
+자세히 설명하면 이야기가 길어지고 동작 중이 아닌, 프로그램 시작 시에 링킹이 일어나는 등 여러 설정에 따라서 다양한 케이스가 존재하기 때문에 Dynamic Linking의 경우
 
 - Dynamic Linking에 필요한 Section 과 Entry 들의 구조와 관계
 - Dynamic Lining이 일어나는 과정
 
 을 분리하여 설명한다.
 ## Dynamic Symble Table Entry(.dynsym)
-구조의 경우 [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#Symbol Table Entry(.symtab)\|Symbol Table Entry]]와 동일한 구조를 가지고 구조체 또한 같은 구조체를 가진다.
+구조의 경우 [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#Symbol Table Entry(.symtab)\|Symbol Table Entry(.symtab)]]와 동일한 구조를 가지고 구조체 또한 같은 구조체를 가진다.
 
 Symbol Table Entry와 같이 그림으로 나타내면 다음과 같다.
 ![image-20231025113003181.png|round](/img/user/kr/CTF/Basic/assets/ELF%20%ED%8C%8C%EC%9D%BC%20%ED%98%95%EC%8B%9D%EC%97%90%EC%84%9C%20%EC%9E%AC%EB%B0%B0%EC%B9%98(Relocation),%20%EB%A7%81%ED%82%B9(Linking)%20%EA%B9%8C%EC%A7%80/image-20231025113003181.png)
@@ -714,7 +729,9 @@ Section Headers:
 # 결론
 ELF 파일의 형식 과 실제 실행파일이 운영체제에서 동작하기 위해 필요한 링킹 과정에 대해서 살펴보았다.
 
-링킹 과정의 경우, 자칫 과정이 복잡해 보이나, 사실 핵심은 메모리에 어느 부분에 변수가 맵핑이 될 지 모른다는 사실만을 이해하고 있으면 왜 링킹이 필요한지 알 수 있다.
+링킹 과정의 경우, 자칫 과정이 복잡해 보이나, 사실 핵심은 "메모리에 어느 부분에 변수가 맵핑이 될 지 모른다는 문제를 해결하기 위해서 등장했다" 라는 것이다.
+
+어느 곳에 존재할지 예상할 수 없는 변수 또는 함수의 위치에 대해서 [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#Linking\|계산 방법]]과 변수 또는 함수가 [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#Linking\|존재하는 섹션]], [[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지#Linking\|섹션에서의 offset]] 등을 두어서 실제 필요할 때 계산해서 사용하겠다 가 바로 핵심인 것이다!
 ## 부록: 전체적인 그림
 
 ### Relocation 흐름
@@ -750,3 +767,10 @@ st_info: 심볼의 정보를 표시 
 	-  STT_LOPROC(13)~STT_HIPROC(15): 프로세스에 의존적인심볼 타입
 
 </div></div>
+
+
+
+[^1]: 아래 위키피디아를 [[kr/CTF/Basic/GOT, PLT 부터 Dynamic Linking 까지\|다이나믹 링킹]]까지 읽고난 후에 살펴보자
+- https://en.wikipedia.org/wiki/Relocation_(computing)
+- https://en.wikipedia.org/wiki/Program_lifecycle_phase
+- https://en.wikipedia.org/wiki/Loader_(computing)
