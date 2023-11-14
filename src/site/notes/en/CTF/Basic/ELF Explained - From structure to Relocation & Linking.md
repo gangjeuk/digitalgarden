@@ -1,10 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/en/CTF/Basic/ELF Explained - From structure to Relocation & Linking/","tags":["TODO/got_plt_tls_파일내용과_같이_검토_필요","TODO/번역확인","CTF/basic/ELF"],"created":"2023-10-10","updated":"2023-11-14"}
+{"dg-publish":true,"permalink":"/en/CTF/Basic/ELF Explained - From structure to Relocation & Linking/","tags":["CTF/basic/ELF"],"created":"2023-10-10","updated":"2023-11-14"}
 ---
 
 # Reference
-[[unlwadrokhceasqm\|unlwadrokhceasqm]]
-[[mnqszkqgknsisvcf\|mnqszkqgknsisvcf]]
+
 https://www.sco.com/developers/gabi/2012-12-31/contents.html
 https://intezer.com/blog/malware-analysis/executable-and-linkable-format-101-part-3-relocations/
 https://docs.oracle.com/cd/E19683-01/817-3677/chapter6-42444/index.html
