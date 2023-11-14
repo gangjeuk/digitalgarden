@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/지식나눔/LazyVim 설치 및 설정하기/","created":"2023-11-11"}
+{"dg-publish":true,"permalink":"/kr/지식나눔/LazyVim 설치 및 설정하기/","tags":["Tips/LazyVim"],"created":"2023-11-11"}
 ---
 
 
