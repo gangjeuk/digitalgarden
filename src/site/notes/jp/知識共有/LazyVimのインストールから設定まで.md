@@ -63,7 +63,7 @@ nvim
 
 インストール可能なプラグインの中で下記のリストを選択してインストールしてみよう(または自分に合うものを選んで)
 
-- `formatting.prettier
+- `formatting.prettier`
 - `lang.clangd`s
 - `lang.cmake`
 - `lang.markdown`
