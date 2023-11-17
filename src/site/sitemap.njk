@@ -17,7 +17,8 @@ eleventyExcludeFromCollections: true
                               hreflang="{{xhtml.hreflang}}"
                               href="{{meta.siteBaseUrl}}{{xhtml.href | url}}" />
                   {% endfor %}
-              {% endif %}
+                {% endif %}
+              {% endfor %}
             {% endfor %}
         </url>
     {% endfor %}
