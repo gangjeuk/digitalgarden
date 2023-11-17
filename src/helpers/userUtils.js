@@ -133,7 +133,8 @@ function getStructedMapping(mapping) {
     //console.log(xhtml);
     for (let notePath of mapping[tag]) {
       let tmp = {};
-      tmp[notePath] = xhtml;
+      let urlPath = notePath.replace("/notes/", "/") + "/";
+      tmp[urlPath] = xhtml;
       ret.push(tmp);
     }
   }
