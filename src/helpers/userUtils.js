@@ -130,6 +130,7 @@ function getStructedMapping(mapping) {
       xhtml.push({ rel: "alternate", hreflang: lang, href: urlPath });
     }
 
+    console.log(xhtml);
     for (let notePath of mapping[tag]) {
       let tmp = {};
       tmp[notePath] = xhtml;
@@ -147,7 +148,7 @@ function userComputed(data) {
   mapping = getMapbyTag(data);
   mapping = filterMultiLang(mapping);
   mapping = getStructedMapping(mapping);
-  console.log(mapping);
+  //console.log(mapping);
   return { mapping };
 }
 
