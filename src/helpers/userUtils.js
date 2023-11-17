@@ -130,7 +130,7 @@ function getStructedMapping(mapping) {
       xhtml.push({ rel: "alternate", hreflang: lang, href: urlPath });
     }
 
-    console.log(xhtml);
+    //console.log(xhtml);
     for (let notePath of mapping[tag]) {
       let tmp = {};
       tmp[notePath] = xhtml;
