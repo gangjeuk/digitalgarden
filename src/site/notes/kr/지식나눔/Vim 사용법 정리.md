@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/kr/지식나눔/Vim 사용법 정리/","created":"2023-10-11"}
 ---
 
-
+********
 
 
 # Reference
@@ -236,6 +236,12 @@ Tip 12. '표 2 Vim의 오퍼레이터 명령'
 `:%!xxd` 입력하면 헥스 모드로 전환
 `:%!xxd -r` 입력하면 텍스트 모드로 돌아옴
 
+## 실행 옵션
+### 읽기 전용
+```bash
+vim -R [file_name]
+-R: open file with read-only mode
+```
 ## 창 관리
 ### 창 생성및 삭제
 | 명령                 | 효과                                               |
