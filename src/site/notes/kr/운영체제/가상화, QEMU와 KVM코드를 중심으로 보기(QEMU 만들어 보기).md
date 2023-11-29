@@ -7,7 +7,9 @@
 
 오픈소스 가상화 도구 중에 가장 유명한 것이 QEMU가 아닐까 싶다.
 # QEMU 
-QEMU는 가상화 도구 중에서도 조금 특이한 구조를 가진다, 다른 유명한 도구 중에서 VMware나 VirtualBox 는 구조를 그림으로 간단하게 설명하기 쉽지만 QEMU는 리눅스 진영의 KVM과 합쳐져서 한 그림을 나타내는 것이 쉽지 않다.
+QEMU는 가상화 도구 중에서도 조금 특이한 구조를 가진다. 
+
+다른 유명한 도구 중에서 VMware나 VirtualBox 는 구조를 그림으로 간단하게 설명하기 쉽지만 QEMU는 리눅스 진영의 KVM과 합쳐져서 한 그림을 나타내는 것이 쉽지 않다.
 
 # 배경지식
 ## 가상화 종류
@@ -160,18 +162,18 @@ KVM은 위에서 말했듯이 CPU가 지원하는 가상화를 관리하는 일�
 
 어떻게 보면 KVM은 하이퍼바이저와 동일한 역활을 수행한다고 볼 수 있다.
 ## 하이퍼바이저
-하이퍼바이저는 이름은 어려워 보이지만 여타 다른 모든 것이 그렇듯이 프로그램이라고 생각하면 된다.
+하이퍼바이저는 이름은 어려워 보이지만 여타 다른 모든 것이 그렇듯이 프로그램이의 한 종류라고 생각하면 된다.
 
 하이퍼바이저는 운영체제에 가까운 프로그램이고, 운영체제가 프로세스에 대한 리소스 컨트롤를 한다면, 하이퍼바이저는 운영체제에 대한 관리를 하는 프로그램이다.
 (운영체제에 대한 관리도 결국에는 하드웨어의 자원의 배분을 관리한다는 점에서 운영체제와 동일하다 볼 수 있다)
 
 ![Pasted image 20231118210130.png|center round|400](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/Pasted%20image%2020231118210130.png)
-\[출처 - https://en.wikipedia.org/wiki/Hypervisor\]
+\[출처 - https://en.wikipedia.org/wiki/Hypervisor\ \]
 
 KVM이 독특한 점은 Linux 상에서 구현되어 있다는 점이다, 즉 리눅스 소스 코드 안에 KVM이 포함된다.
 
 ![Pasted image 20231118210344.png|center|400](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/Pasted%20image%2020231118210344.png)
-\[출처 - http://emal.iptime.org/noriwiki/index.php/Kernel_based_virtual_machine\]
+\[출처 - http://emal.iptime.org/noriwiki/index.php/Kernel_based_virtual_machine\ \]
 
 ~~그렇다 Linux는 자체로 하이퍼바이저도 될 수 있는 운영체제인 것이다!~~
 
@@ -271,7 +273,7 @@ static int (*kvm_vmx_exit_handlers[])(struct kvm_vcpu *vcpu) = {
 
 코드는 아래와 같고, 코드에서 바뀐 부분은 
 1. 0x07C0으로의 jmp 삭제
-2. 메지 출력이 끝난 후 hlt 명령어를 통해 종료를 알림
+2. 메시지 출력이 끝난 후 hlt 명령어를 통해 종료를 알림
 
 로 두 가지이다.
 
@@ -563,9 +565,9 @@ int main(int argc, char *argv[]) {
       // |_ You can check your bootloader code in mem.userspace_addr
 ```
 
-마지막으로 우리가 생성한 메모리의 크기가 0x1000 이기 때문에 모니터의 메모리 주소인 0xb8000에 비해서 크게 작은 것을 알 수 있다.
+마지막으로 우리가 생성한 메모리의 크기가 0x1000 이기 때문에 모니터의 메모리 주소인 0xb8000에 비해서 작은 것을 알 수 있다.
 
-이러한 경우 0xb8000에 무언가를 쓰려하면 kvm내에서 처리할 수 없는 쓰기이기 때문에 kvm에서 VMEXIT을 발생시키고 exit reason은 `KVM_EXIT_MMIO` 이 된다.
+이러한 경우 0xb8000에 무언가를 쓰려하면 kvm내에서 처리할 수 없는 쓰기 동작이기 때문에 kvm에서 VMEXIT을 발생시키고 exit reason은 `KVM_EXIT_MMIO` 이 된다.
 
 이 경우 현재 쓰고 싶어 하는 주소와 값과 데이터, 데이터의 길이 등이 `mmio`에 기록되어 있기 때문에 이 값을 현재 코드에 존재하는 가상 모니터(`vga_monitor`)에 쓰면, 주소 0xb8000 에 기록되는 값이 가상 모니터에 쓰이게 된다. 
 ```c
@@ -599,7 +601,7 @@ int main(int argc, char *argv[]) {
 
 `게스트 메모리 참조 --> 게스트 페이징 테이블 참조 --> 게스트 실제 메모리 참조(?) --> 호스트 메모리 참조 --> 호스트 페이징 테이블 참조 --> 호스트 실제 메모리 참조(?)`
 
-흠, 아무리 생각해도 오버헤드가 너무 크다.
+흠🤔, 아무리 생각해도 오버헤드가 너무 크다.
 
 이러한 문제를 해결하기 위해서 하드웨어 가상화 시에 이런 페이징 테이블 참조의 최적화를 위한 기능을 지원한다.
 
