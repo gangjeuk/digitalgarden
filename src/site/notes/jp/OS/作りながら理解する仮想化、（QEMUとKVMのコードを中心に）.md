@@ -273,7 +273,7 @@ static int (*kvm_vmx_exit_handlers[])(struct kvm_vcpu *vcpu) = {
 ```
 # QEMU の作成
 ## Kernel Code
-次はカーネルのKVMを使って私たちが作ったアセンブリを起動させてくれる私たちだけのQEMUを作成して私たちが[[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader\|以前に]]作ったブートローダを動作させてみましょう。作成したブートローダを動作させてみましょう。
+次はカーネルのKVMを使って私たちが作ったアセンブリを起動させてくれる私たちだけのQEMUを作成して私たちが[[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기\|以前に]]作ったブートローダを動作させてみましょう。作成したブートローダを動作させてみましょう。
 
 コードは下記の通りで、コードで変わった部分は次の通りです。
 1. 0x07C0へのjmpを削除
@@ -586,7 +586,7 @@ int main(int argc, char *argv[]) {
 値がうまく表示されることが確認できます。
 ![image-20231128184115199.png|center round|300](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/image-20231128184115199.png)
 
-また、[[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader\|以前に]]作成したブートローダの実行結果と比較してみましょう。
+また、[[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기\|以前に]]作成したブートローダの実行結果と比較してみましょう。
 ![image-20231128184134639.png|center round|300](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/image-20231128184134639.png)
 
 
