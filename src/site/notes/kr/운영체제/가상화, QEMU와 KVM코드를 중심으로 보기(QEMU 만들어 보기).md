@@ -269,7 +269,7 @@ static int (*kvm_vmx_exit_handlers[])(struct kvm_vcpu *vcpu) = {
 
 # QEMU 만들기
 ## Kernel Code
-이제 커널의 KVM을 사용해서 우리가 작성한 어셈블리를 기동시켜 주는 우리만의 QEMU를 작성해 우리가 [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader\|이전에]] 작성한 부트로더를 작동시켜 보자.
+이제 커널의 KVM을 사용해서 우리가 작성한 어셈블리를 기동시켜 주는 우리만의 QEMU를 작성해 우리가 [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기\|이전에]] 작성한 부트로더를 작동시켜 보자.
 
 코드는 아래와 같고, 코드에서 바뀐 부분은 
 1. 0x07C0으로의 jmp 삭제
@@ -584,7 +584,7 @@ int main(int argc, char *argv[]) {
 원하는 값이 잘 표시되는 것을 확인할 수 있다.
 ![image-20231128184115199.png|center round|300](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/image-20231128184115199.png)
 
-또한 [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader\|이전에]] 작성한 부트로드의 실행 결과와 비교해 보자.
+또한 [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기\|이전에]] 작성한 부트로드의 실행 결과와 비교해 보자.
 ![image-20231128184134639.png|center round|300](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/image-20231128184134639.png)
 
 
