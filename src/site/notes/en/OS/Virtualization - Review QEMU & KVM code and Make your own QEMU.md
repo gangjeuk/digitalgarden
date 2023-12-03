@@ -270,7 +270,7 @@ static int (*kvm_vmx_exit_handlers[])(struct kvm_vcpu *vcpu) = {
 
 # Create QEMU
 ## Kernel Code
-Now let's write our own QEMU that will use the kernel's KVM to launch the assembly we wrote to run the bootloader we wrote [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader\|before]].
+Now let's write our own QEMU that will use the kernel's KVM to launch the assembly we wrote to run the bootloader we wrote [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기\|before]].
 
 The code is shown below, with the following changes
 1. delete jmp to 0x07C0
@@ -584,7 +584,7 @@ The execution result is as follows
 You can see that the desired value is displayed well.
 ![image-20231128184115199.png|center round|300](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/image-20231128184115199.png)
 
-And Let's compare this to the result of running the bootload we created [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader\|before]]. 
+And Let's compare this to the result of running the bootload we created [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기\|before]]. 
 ![image-20231128184134639.png|center round|300](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/image-20231128184134639.png)
 
 
