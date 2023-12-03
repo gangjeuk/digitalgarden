@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/운영체제/OS - 목차/"}
+{"dg-publish":true,"permalink":"/kr/운영체제/OS - 목차/","tags":["OS/Index"]}
 ---
 
 
