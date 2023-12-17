@@ -6,7 +6,7 @@
 
 # ![image-20231020162344029.png|18](/img/user/kr/data/icon/%EB%AA%A9%EC%B0%A8/image-20231020162344029.png) Newbie
 1. [[en/OS/History and Development of Operating Systems\|History and Development of Operating Systems]]
-2. [[en/OS/Let's start with Bare-metal(1) - How computer actually boot?\|Let's start with Bare-metal(1) - How computer actually boot?]]
+2. [[en/OS/Let's start with Bare-metal(1) - How computer actually boot\|Let's start with Bare-metal(1) - How computer actually boot]]
 3. [[en/OS/Let's start with Bare-metal(2) - Write your own Bootloader\|Let's start with Bare-metal(2) - Write your own Bootloader]]
 4. 
 
