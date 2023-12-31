@@ -7,7 +7,7 @@
 # 풀이
 
 
-> timing based side channel 공격 임으로
+> timing based side channel 공격 임의로
 > 시간과 관련된 것으로 가정하고 문제풀이
 
 
