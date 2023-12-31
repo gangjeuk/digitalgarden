@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/운영체제/베어메탈 부터(1) - BIOS 부팅 과정과 Boot Loader작성/","tags":["Computer-Science","TODO/need_to_upload","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
+{"dg-publish":true,"permalink":"/kr/운영체제/베어메탈 부터(1) - BIOS 부팅 과정과 Boot Loader작성/","tags":["Computer-Science","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
 ---
 
 
