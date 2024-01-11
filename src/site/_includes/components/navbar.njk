@@ -5,9 +5,12 @@
                 <h1 style="margin: 15px !important;">{{meta.siteName}}</h1>
             </a>
         </div>
+        <div style="display: inline-flex">
         {% if settings.dgEnableSearch === true%}
             {% include "components/searchButton.njk" %}
         {%endif%}
+        {% include "components/user/common/body/language_switch.njk" %}
+        </div>
     </nav>
     {%else%}
     <div class="empty-navbar" >
