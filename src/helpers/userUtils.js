@@ -135,12 +135,12 @@ function getStructedMapping(mapping) {
       let tmp = {};
       let urlPath = notePath.replace("/notes/", "/") + "/";
       tmp[urlPath] = xhtml;
-      console.log(tmp);
+      //console.log(tmp);
       ret.push(tmp);
     }
   }
 
-  console.log(ret);
+  //console.log(ret);
   return ret;
 }
 
