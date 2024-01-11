@@ -199,7 +199,6 @@ function setSelectedLocale(locale) {
 
     listEl.value = otherLocale;
     listEl.addEventListener("mousedown", function () {
-      console.log("HREF", href)
       location.href=href;
       });
     dropdownContent.appendChild(listEl);
@@ -214,7 +213,6 @@ setSelectedLocale(locales[0]);
 const browserLang = getLangbyPath("{{ page.url | url }}")
 for (const locale of locales) {
   const localeLang = locale.slice(0, 2)
-  console.log(localeLang, browserLang)
   if (localeLang === browserLang) {
     setSelectedLocale(locale);
   }
