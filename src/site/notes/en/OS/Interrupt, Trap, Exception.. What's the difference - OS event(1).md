@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/en/OS/Interrupt, Trap, Exception.. What's the difference - OS event(1)/","tags":["OS/Bittervet/Event1","TODO/페이지링크수정필요"],"created":"2023-12-08","updated":"2023-12-22"}
+{"dg-publish":true,"permalink":"/en/OS/Interrupt, Trap, Exception.. What's the difference - OS event(1)/","tags":["OS/Bittervet/Event1","TODO/페이지링크수정필요"],"created":"2023-12-08","updated":"2024-01-16"}
 ---
 
-# event
+# Event
 In this chapter, we'll learn about a really important concept in the operating system
 
 It will also be a good refresher for those who have studied operating systems before.
@@ -18,7 +18,7 @@ As the title suggests, interrupts, traps, and exceptions can be defined as event
 So what are events for and why do we need them?
 
 To understand that, let's go back to [[kr/컴퓨터 공학 기초/컴퓨터의 시작, 계산기\|turing machine]] once again.
-![[qchvgeqncethcvvq\|qchvgeqncethcvvq]]
+![Pasted image 20231213204547.png|center|700](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EB%B2%A0%EC%96%B4%EB%A9%94%ED%83%88%20%EB%B6%80%ED%84%B0(1)%20-%20BIOS%20%EB%B6%80%ED%8A%B8%20Boot%20Loader%EA%B9%8C%EC%A7%80/Pasted%20image%2020231213204547.png)
 The picture above shows an early computer, the Eniac.
 
 There are many differences between computers of the past and computers today, but the biggest difference we can see is the absence of a *keyboard* and *mouse*.
@@ -29,11 +29,11 @@ So how did people use computers in the past without keyboards and mouse?
 In fact, computers in the past were only responsible for one thing: calculating.
 
 They were machines that people wrote code by hand, stitch by stitch, fed it in, and got the expected output.
-![[oovzeivxncnixwuc\|oovzeivxncnixwuc]]
+![image-20231015220526810.png|center round|150](/img/user/kr/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B3%B5%ED%95%99%20%EA%B8%B0%EC%B4%88/assets/%EC%BB%B4%ED%93%A8%ED%84%B0%EC%9D%98%20%EC%8B%9C%EC%9E%91,%20%EA%B3%84%EC%82%B0%EA%B8%B0/image-20231015220526810.png)
 \[Margaret Hamilton showing off her hand-written code\]
 
 If you put in code to calculate the trajectory of a rocket, or to land a rocket on the moon, you would get an output that would tell you how to adjust the attitude and correct the trajectory.
-![[mxqciajdqnifvxec\|mxqciajdqnifvxec]]
+![Pasted image 20231213211006.png|center round|200](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8,%20%ED%8A%B8%EB%9E%A9,%20%EC%98%88%EC%99%B8..%20%EA%B2%B0%EB%A1%A0%EC%9D%80%20%EC%9D%B4%EB%B2%A4%ED%8A%B8(1)%20-%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8/Pasted%20image%2020231213211006.png)
 In other words, you didn't need a keyboard and mouse because all you needed was code and input values to get the answer you wanted as output.
 
 This would have been fine if the computer was just a machine for calculating orbits, but people wanted this great thing to be able to do more than just 'one thing'.
@@ -50,7 +50,7 @@ These are what engineers of the past dreamed of.
 
 The multitasking - playing games, talking on the discord, and doing schoolwork at the same time - and the result is the computer of today.
 
-![[kvpygurnpqzsjfzx\|kvpygurnpqzsjfzx]]
+![Pasted image 20231213212400.png|center round|400](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8,%20%ED%8A%B8%EB%9E%A9,%20%EC%98%88%EC%99%B8..%20%EA%B2%B0%EB%A1%A0%EC%9D%80%20%EC%9D%B4%EB%B2%A4%ED%8A%B8(1)%20-%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8/Pasted%20image%2020231213212400.png)
 
 ## How?
 So how is this computer able to do ==multiple things==?
@@ -71,7 +71,7 @@ The correct answer is
 
 
 
-![[ilewqglownhwxuub\|ilewqglownhwxuub]]
+![Pasted image 20231214181452.png|center|200](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8,%20%ED%8A%B8%EB%9E%A9,%20%EC%98%88%EC%99%B8..%20%EA%B2%B0%EB%A1%A0%EC%9D%80%20%EC%9D%B4%EB%B2%A4%ED%8A%B8(1)%20-%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8/Pasted%20image%2020231214181452.png)
 In other words, you are proceeding along the same lines as above.
 
 This is pretty much what you'd expect, and some of you may have heard the phrase "computers pretend to do multiple things" before.
@@ -119,7 +119,7 @@ The 8086, the classic 16-bit computer, has pins called INTR (Interrupt request) 
 
 Also, when an event occurs, an event handler is called to handle the event depending on the type of event, which is actually a *function*.
 
-![[thovhdqgpezcxmrx\|thovhdqgpezcxmrx]]
+![Pasted image 20231216141316.png|center](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8,%20%ED%8A%B8%EB%9E%A9,%20%EC%98%88%EC%99%B8..%20%EA%B2%B0%EB%A1%A0%EC%9D%80%20%EC%9D%B4%EB%B2%A4%ED%8A%B8(1)%20-%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8/Pasted%20image%2020231216141316.png)
 \[This picture contains a little bit of a lie-~~Note that IDTRs don't exist on the 8086~~\]
 
 This is the whole picture I just described.
