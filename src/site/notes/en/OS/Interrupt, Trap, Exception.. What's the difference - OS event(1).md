@@ -13,7 +13,7 @@ After reading this article, you should have the following knowledge about
 2. know how the keyboard and mouse work on a computer
 3. know what interrupts, traps, and exceptions are, which are important concepts to understand the operating system.
 # Interrupts? Traps? Exceptions?
-As the title suggests, interrupts, traps, and exceptions can be defined as event.
+As the title suggests, interrupts, traps, and exceptions can be defined as *event*.
 
 So what are events for and why do we need them?
 
