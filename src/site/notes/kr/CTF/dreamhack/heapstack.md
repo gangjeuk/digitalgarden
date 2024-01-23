@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/CTF/dreamhack/heapstack/","tags":["CTF/dreamhack/heapstack","pwnable","TODO/need_to_upload"],"created":"2023-12-10","updated":"2023-12-10"}
+{"dg-publish":true,"permalink":"/kr/CTF/dreamhack/heapstack/","tags":["CTF/dreamhack/heapstack","pwnable"],"created":"2023-12-10","updated":"2023-12-10"}
 ---
 
 힙 공부를 하다가 힙 문제를 풀어보려고 찾다가 나온 문제.
