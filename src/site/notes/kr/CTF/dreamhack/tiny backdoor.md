@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/CTF/dreamhack/tiny backdoor/","tags":["CTF/dreamhack/tiny_backdoor","pwnable","TODO/need_to_upload"],"created":"2023-12-14","updated":"2023-12-14"}
+{"dg-publish":true,"permalink":"/kr/CTF/dreamhack/tiny backdoor/","tags":["CTF/dreamhack/tiny_backdoor","pwnable"],"created":"2023-12-14","updated":"2023-12-14"}
 ---
 
 # 풀이
