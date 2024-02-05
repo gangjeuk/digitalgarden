@@ -616,3 +616,4 @@ https://sites.cs.ucsb.edu/~rich/class/cs293b-cloud/notes/Virtualization/virtuali
 https://mp.weixin.qq.com/s/jOzHdSSR4XPQPa5N5f_GCg
 
 https://stackoverflow.com/questions/3215878/what-are-in-out-instructions-in-x86-used-for
+A Comparison of Software and Hardware Techniques for x86 Virtualization
