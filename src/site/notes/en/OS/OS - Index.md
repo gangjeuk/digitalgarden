@@ -16,7 +16,7 @@
 
 
 ------
-# ![image-20231022164952455.png|18](/img/user/kr/C%20%EC%96%B8%EC%96%B4/assets/%EB%AA%A9%EC%B0%A8/image-20231022164952455.png) Hacker
+# ![image-20231022164952455.png|18](/img/user/kr/C%20%EC%96%B8%EC%96%B4/assets/C%EC%96%B8%EC%96%B4%20-%20%EB%AA%A9%EC%B0%A8/image-20231022164952455.png) Hacker
 ## ETC
 ### Virtualization
 [[en/OS/Virtualization - Review QEMU & KVM code and Make your own QEMU\|Virtualization - Review QEMU & KVM code and Make your own QEMU]]
