@@ -44,7 +44,7 @@
 
 
 ------
-# ![image-20231022164952455.png|18](/img/user/kr/C%20%EC%96%B8%EC%96%B4/assets/%EB%AA%A9%EC%B0%A8/image-20231022164952455.png) Hacker
+# ![image-20231022164952455.png|18](/img/user/kr/C%20%EC%96%B8%EC%96%B4/assets/C%EC%96%B8%EC%96%B4%20-%20%EB%AA%A9%EC%B0%A8/image-20231022164952455.png) Hacker
 ### ext2 살펴보고 만들어보기
 ## 그래서 뭐 함? - DOOM 돌려보기
 ### 모니터 출력은?
