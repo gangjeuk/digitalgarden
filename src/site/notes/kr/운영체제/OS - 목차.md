@@ -63,4 +63,6 @@
 1. [[kr/운영체제/가상화, QEMU와 KVM코드를 중심으로 보기(QEMU 만들어 보기)\|가상화, QEMU와 KVM코드를 중심으로 보기(QEMU 만들어 보기)]]
 
 ### DMA
-1. [[kr/운영체제/Intel 8086과 Minix 그리고 PCI로 알아보는 DMA 원리(1)\|Intel 8086과 Minix 그리고 PCI로 알아보는 DMA 원리(1)]]
+1. [[kr/운영체제/CPU 입출력 부터 DMA 까지(1) - Intel 8086과 Minix 그리고 PCI로 알아보자\|CPU 입출력 부터 DMA 까지(1) - Intel 8086과 Minix 그리고 PCI로 알아보자]]
+2. [[kr/운영체제/CPU 입출력 부터 DMA 까지(2) - DMA와 PCI와 BUS\|CPU 입출력 부터 DMA 까지(2) - DMA와 PCI와 BUS]]
+3. [[kr/운영체제/CPU 입출력 부터 DMA 까지(3) - DMA 구현하기\|CPU 입출력 부터 DMA 까지(3) - DMA 구현하기]]
