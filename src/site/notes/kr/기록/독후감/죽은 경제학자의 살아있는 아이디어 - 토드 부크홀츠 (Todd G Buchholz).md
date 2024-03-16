@@ -1,7 +1,19 @@
 ---
-{"dg-publish":true,"permalink":"/kr/기록/독후감/죽은 경제학자의 살아있는 아이디어 - 토드 부크홀츠 (Todd G Buchholz)/","title":"죽은 경제학자의 살아있는 아이디어","tags":["📚Book"],"created":"2023-10-14","updated":"2023-10-14"}
+tags:
+  - 📚Book
+title: 죽은 경제학자의 살아있는 아이디어
+author:
+  - 토드 부크홀츠 (Todd G. Buchholz)
+publisher: 김영사
+publish: 2023-09-25
+total: 1101
+isbn: 8934909382 9788934909385
+cover: "[[b5e3140d233c9504df8529bb8146a02b_MD5.jpg]]"
+status: read
+created: 2023-10-14
+updated: 2023-10-14
+dg-publish: true
 ---
-
 
 ![b5e3140d233c9504df8529bb8146a02b_MD5.jpg](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%8F%85%ED%9B%84%EA%B0%90/assets/%EC%A3%BD%EC%9D%80%20%EA%B2%BD%EC%A0%9C%ED%95%99%EC%9E%90%EC%9D%98%20%EC%82%B4%EC%95%84%EC%9E%88%EB%8A%94%20%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%20-%20%ED%86%A0%EB%93%9C%20%EB%B6%80%ED%81%AC%ED%99%80%EC%B8%A0%20(Todd%20G%20Buchholz)/b5e3140d233c9504df8529bb8146a02b_MD5.jpg)
 
