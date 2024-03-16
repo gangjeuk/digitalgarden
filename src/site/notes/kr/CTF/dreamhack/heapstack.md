@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/kr/CTF/dreamhack/heapstack/","tags":["CTF/dreamhack/heapstack","pwnable"],"created":"2023-12-10","updated":"2023-12-10"}
+tags:
+  - CTF/dreamhack/heapstack
+  - pwnable
+created: 2023-12-10
+글확인: true
+dg-publish: true
+updated: 2023-12-10
 ---
-
 힙 공부를 하다가 힙 문제를 풀어보려고 찾다가 나온 문제.
 
 fastbin 관련 문젠 줄 알고 계속 그쪽으로 시도하다가 시간이 굉장히 오래 걸렸다.
