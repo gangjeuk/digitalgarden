@@ -1,7 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/jp/知識共有/LazyVimのインストールから設定まで/","tags":["Tips/LazyVim"],"created":"2023-11-11"}
+created: 2023-11-11
+tags:
+  - Tips/LazyVim
+dg-publish: true
+cover: "[[image-20231111185327420.png]]"
 ---
-
 
 
 
