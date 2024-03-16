@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/en/Tips/Setting Obsidian Digital Garden(Make your own blog with Obsidian)/","tags":["Tips/Obsidian_digital_garden"],"created":"2023-12-30","updated":"2023-12-30"}
+created: 2023-12-30
+updated: 2023-12-30
+tags:
+  - Tips/Obsidian_digital_garden
+글확인: true
+dg-publish: true
+번역확인: true
 ---
-
 This post is simply to share my current blog configuration.
 
 If you're not familiar with Obsidian yet, you can read all the way through the post, and if you just want to know how to configure it quickly, you can start from [[en/Tips/Setting Obsidian Digital Garden(Make your own blog with Obsidian)#Let's get started!\|here]].
