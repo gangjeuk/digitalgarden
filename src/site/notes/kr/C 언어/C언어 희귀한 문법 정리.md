@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/kr/C 언어/C언어 희귀한 문법 정리/","tags":["C_Lang/Hacker/RarePattern"],"created":"2023-10-23","updated":"2023-11-15"}
+tags:
+  - C_Lang/Hacker/RarePattern
+created: 2023-10-23
+updated: 2023-11-15
+글확인: true
+dg-publish: true
 ---
-
 
 
 잘 보이진 않지만 가끔씩 보이는 C 언어 문법을 정리.
