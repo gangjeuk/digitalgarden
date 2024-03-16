@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/kr/C 언어/C언어 - 목차/","created":"2023-03-01"}
+dg-publish: true
+created: 2023-03-01
+cover: "[[image-20231128203335533.png]]"
 ---
-
 
 
 
