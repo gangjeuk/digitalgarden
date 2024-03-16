@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/kr/지식나눔/Vim 사용법 정리/","created":"2023-10-11"}
+created: 2023-10-11
+dg-publish: true
+cover: "[[image-20231101192238972.png]]"
 ---
-
 ********
 
 
