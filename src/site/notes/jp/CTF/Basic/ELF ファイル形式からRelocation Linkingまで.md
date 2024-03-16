@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/jp/CTF/Basic/ELF ファイル形式からRelocation Linkingまで/","tags":["CTF/basic/ELF"],"created":"2023-10-10","updated":"2023-11-14"}
+tags:
+  - CTF/basic/ELF
+created: 2023-10-10
+글확인: true
+dg-publish: true
+번역확인: true
+updated: 2023-11-14
+cover: "[[image-20231010161636907.png]]"
 ---
-
 # リファレンス
 [[ELF-64 Object File Format.pdf]]
 [[ELF-64 Object File Format, Version 1.4 1 ELF-64 Object File Format Including HP and HP-UX Extensions.pdf]]
@@ -399,7 +405,7 @@ sh_link と sh_info の意味を考えながら、各 Section の図を描くと
 
 ![image-20231006154233302.png|round](/img/user/kr/CTF/Basic/assets/ELF%20%ED%8C%8C%EC%9D%BC%20%ED%98%95%EC%8B%9D%EC%97%90%EC%84%9C%20%EC%9E%AC%EB%B0%B0%EC%B9%98(Relocation),%20%EB%A7%81%ED%82%B9(Linking)%20%EA%B9%8C%EC%A7%80/image-20231006154233302.png)
 
-実際の再配置に必要な情報を持つ Symbol Table Section と Relocation Section は [[ELF ファイル形式からRelocation Linkingまで#File header|上]] のようにそれぞれエントリで構成されています。
+実際の再配置に必要な情報を持つ Symbol Table Section と Relocation Section は [[jp/CTF/Basic/ELF ファイル形式からRelocation Linkingまで#File header\|上]] のようにそれぞれエントリで構成されています。
 
 ![image-20231006184427053.png|round](/img/user/kr/CTF/Basic/assets/ELF%20%ED%8C%8C%EC%9D%BC%20%ED%98%95%EC%8B%9D%EC%97%90%EC%84%9C%20%EC%9E%AC%EB%B0%B0%EC%B9%98(Relocation),%20%EB%A7%81%ED%82%B9(Linking)%20%EA%B9%8C%EC%A7%80/image-20231006184427053.png)
 
@@ -442,7 +448,7 @@ Rellocation Entryは二つの種類で構成され、実際にRellocationが適�
 
 今回では.relaを中心に説明します。
 ## Address Calculation
-実際のアドレスの計算は[[ELF ファイル形式からRelocation Linkingまで#Relocation Entry(.rela, .rel)|Relocation Entry]]章で説明した r_info を利用して行われます。
+実際のアドレスの計算は[[jp/CTF/Basic/ELF ファイル形式からRelocation Linkingまで#Relocation Entry(.rela, .rel)\|Relocation Entry]]章で説明した r_info を利用して行われます。
 
 r_infoは再配置を行うシンボルテーブルのインデックスと==適用する再配置タイプ(どのように再配置するかについての情報)==を持ちます。
 >[!info]- r_info
@@ -465,11 +471,11 @@ x86の場合、以下のような再配置方法が存在します。
 | ...                                                                            | ... | ...   |
 
 
-この他にも[[Thread Local Storage Explained|TLS(Thread Local Storage)]]やDynamic Linkingなどのための様々な方式が存在する。
+この他にも[[Thread Local Storage Explained\|TLS(Thread Local Storage)]]やDynamic Linkingなどのための様々な方式が存在する。
 
 ここで登場するS, A, Pはそれぞれ
 - S: 再配置後のシンボルの実際の位置。
-	- 計算式: ([[st_value 의미|st_value]]) + シンボルが定義されたセクションがロードされたアドレス
+	- 計算式: ([[kr/CTF/Basic/assets/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/st_value 의미\|st_value]]) + シンボルが定義されたセクションがロードされたアドレス
 - P: 再配置すべき部分の位置
 	- 計算式: r_offset + 再配置を行うセクションがロードされたアドレス
 - A: 加算される値 = r_addend
@@ -478,7 +484,7 @@ x86の場合、以下のような再配置方法が存在します。
 
 それでは、実際の計算がどのように行われるのか見てみましょう。
 ## Procedure
-使用するプログラムは[[ELF ファイル形式からRelocation Linkingまで#실습 준비#Global(Linking)|2 番目の実習用のプログラム(Global)]]を使います。
+使用するプログラムは[[jp/CTF/Basic/ELF ファイル形式からRelocation Linkingまで#실습 준비\|2 番目の実習用のプログラム(Global)]]を使います。
 
 まず、readelfプログラムでSection, Relocation entryに関する情報、Symbol Tableに関する情報を確認しましょう。
 
@@ -603,7 +609,7 @@ func_AのR_X86_64_PLT32形式の場合、Dynamic Linkingに関連するので、
 
 計算式は次のようになります。
 Address: <span class="green">S</span> + <span class="blue">A</span> - <span class="yellow">P</span>。
-上記の[[ELF ファイル形式からRelocation Linkingまで#Address Calculation|計算式]]をもう少し解くと次のようになります。
+上記の[[jp/CTF/Basic/ELF ファイル形式からRelocation Linkingまで#Address Calculation\|計算式]]をもう少し解くと次のようになります。
 $$
 \color{green} st\_value + .data \color{blue} + r\_append \color{yellow} - (r\_offset + .text )
 $$
@@ -645,7 +651,7 @@ Dynamic Linkingの場合、理論的な部分と実際に動作する部分でRe
 
 を分けて説明します。
 ## Dynamic Symble Table Entry(.dynsym)
-構造の場合、[[ELF ファイル形式からRelocation Linkingまで#Symbol Table Entry(.symtab)|Symbol Table Entry]]と同じ構造を持ち、構造体も同じ構造体を持ちます。
+構造の場合、[[jp/CTF/Basic/ELF ファイル形式からRelocation Linkingまで#Symbol Table Entry(.symtab)\|Symbol Table Entry]]と同じ構造を持ち、構造体も同じ構造体を持ちます。
 
 Symbol Table Entryのように図で表すと次のようになります。
 ![image-20231025113003181.png|round](/img/user/kr/CTF/Basic/assets/ELF%20%ED%8C%8C%EC%9D%BC%20%ED%98%95%EC%8B%9D%EC%97%90%EC%84%9C%20%EC%9E%AC%EB%B0%B0%EC%B9%98(Relocation),%20%EB%A7%81%ED%82%B9(Linking)%20%EA%B9%8C%EC%A7%80/image-20231025113003181.png)
@@ -705,7 +711,7 @@ d_un; }Elf64_Dyn；
 ``` 
 
 構造体は `d_tag` によって `d_val` または `d_ptr` として（unionですので）意味を持つ構造体になる。
-詳細な内容は [[ELF64_Dyn 의미|ここを参照してください]].
+詳細な内容は [[kr/CTF/Basic/assets/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/ELF64_Dyn 의미\|ここを参照してください]].
 
 簡単に `readelf` で読み込んだ結果を見ればすぐに理解できる。
 
