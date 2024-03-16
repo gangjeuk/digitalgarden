@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/kr/기록/논문/Paper Review - Memory Barriers a Hardware View for Software Hackers/","tags":["paper-review"],"created":"2024-01-26","updated":"2024-03-16"}
+created: 2024-01-26
+tags:
+  - paper-review
+글확인: true
+dg-publish: true
+updated: 2024-03-16
+cover: "[[image-20240126111231050.png]]"
 ---
-
 
 # 개요
 이 글은 논문 'Memory Barriers a Hardware View for Software Hackers'를 정리한 글임과 동시에 여러 동기화 문제가 근본적으로 왜 발생하고 어떻게 해결되는지에 대해서 다룬다.
