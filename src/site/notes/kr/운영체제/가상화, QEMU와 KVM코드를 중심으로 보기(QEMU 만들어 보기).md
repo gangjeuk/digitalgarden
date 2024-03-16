@@ -1,12 +1,7 @@
 ---
-created: 2023-11-18
-tags:
-  - OS/Hacker/Virtualization
-글확인: true
-dg-publish: true
-cover: "[[image-20231128202415508.png]]"
-updated: 2023-11-28
+{"dg-publish":true,"permalink":"/kr/운영체제/가상화, QEMU와 KVM코드를 중심으로 보기(QEMU 만들어 보기)/","tags":["OS/Hacker/Virtualization"],"created":"2023-11-18","updated":"2023-11-28"}
 ---
+
 
 
 
