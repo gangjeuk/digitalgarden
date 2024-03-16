@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/kr/CTF/picoCTF/SideChannel/","tags":["forensics","side_channel","timing_based"],"created":"2023-09-10"}
+tags:
+  - forensics
+  - side_channel
+  - timing_based
+created: 2023-09-10
+dg-publish: true
+cover: "[[image-20231101125526254.png]]"
 ---
-
 
 
 # 풀이
