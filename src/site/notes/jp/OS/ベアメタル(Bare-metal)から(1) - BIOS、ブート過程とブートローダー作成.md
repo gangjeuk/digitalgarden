@@ -1,7 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/jp/OS/ベアメタル(Bare-metal)から(1) - BIOS、ブート過程とブートローダー作成/","tags":["Computer-Science","TODO/need_to_upload","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
+tags:
+  - Computer-Science
+  - TODO/need_to_upload
+  - OS/Basic/BareMetal1
+created: 2023-11-07
+글확인: true
+dg-publish: true
+updated: 2023-11-18
+번역확인: true
+cover: "[[Pasted image 20231203165134.png]]"
 ---
-
 
 # ベアメタル
 ベアメタルとは以下のように定義される。
