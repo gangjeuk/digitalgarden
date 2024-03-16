@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/kr/운영체제/OS - 목차/","tags":["OS/Index"]}
+dg-publish: true
+tags:
+  - OS/Index
 ---
-
 
 
 # ![image-20231020162344029.png|18](/img/user/kr/data/icon/%EB%AA%A9%EC%B0%A8/image-20231020162344029.png) Newbie
@@ -55,7 +56,7 @@
 # 기타
 ### 채신 동기화 기법
 1. [[kr/운영체제/동기화의 본질 - SW와 HW 관점에서\|동기화의 본질 - SW와 HW 관점에서]]
-	1. **추가자료** - [[kr/기록/논문/Paper Review - Memory Barriers a Hardware View for Software Hackers\|Paper Review - Memory Barriers a Hardware View for Software Hackers]]
+	1. **추가자료** - [[kr/기록/논문/Paper Review - Memory Barriers a Hardware View for Software Hackers\|kr/기록/논문/Paper Review - Memory Barriers a Hardware View for Software Hackers]]
 2. [[kr/운영체제/최신 동기화 기법\|최신 동기화 기법]]
 3. [[kr/운영체제/x86  메모리 모델\|x86  메모리 모델]]
 
