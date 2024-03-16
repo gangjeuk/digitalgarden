@@ -1,7 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/kr/지식나눔/옵시디언 & PARA/","created":"2023-09-20"}
+tags: 
+created: 2023-09-20
+dg-publish: true
+글확인: true
+cover: "[[image-20231101191707762.png]]"
 ---
-
 # Obsidian을 PARA 형식으로 노트 정리하기
 Obsidian 노트 관리를 위해서 노트를 PARA 형식으로 정리하기로 하였다.
 
