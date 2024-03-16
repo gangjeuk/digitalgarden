@@ -1,0 +1,17 @@
+<script>
+
+// When window loaded
+window.addEventListener('DOMContentLoaded', function () {
+  var path = document.location.pathname;
+  var lang = ''
+  if(path.split('/')[1] == 'jp'){
+    lang = 'jp';
+  }
+  else if(path.split('/')[1] == 'en'){
+    lang = 'en';
+  }
+  var href = document.querySelector("body > div:nth-child(1) > div:nth-child(1) > nav > div.navbar-inner > a").href;
+
+  document.querySelector("body > div:nth-child(1) > div:nth-child(1) > nav > div.navbar-inner > a").href = href + lang + "/index";
+})
+</script>

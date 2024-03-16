@@ -11,8 +11,10 @@
             {% include imp %}
         {% endfor %}
     </div>
-    
+    <div style="display: inline-flex;">
     {% if settings.dgEnableSearch === true%}
         {% include "components/searchButton.njk" %}
     {%endif%}
+    {% include "components/user/common/body/language_switch.njk" %}
+    </div>
 </nav>

@@ -1,0 +1,8 @@
+<script>
+// When window loaded
+window.addEventListener('DOMContentLoaded', function () {
+  for(var ele of document.getElementsByClassName("content-tags")){
+      ele.innerHTML = ele.innerHTML.replaceAll(', ','');
+  }
+})
+</script>

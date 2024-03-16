@@ -1,0 +1,17 @@
+<script>
+
+// Window Loaded
+// when Index note page should be treated as index page
+window.addEventListener('DOMContentLoaded', function()
+{
+  note_name = document.location.pathname.split('/')[2]
+  if(note_name == 'index'){
+      // Add notes class to HOMEPAGE
+      document.body.classList.add("notes");
+
+      // Remove tag on Index page
+      document.getElementsByClassName('header-meta')[0].setAttribute('style', 'display: none;');
+    }
+});
+
+</script>
