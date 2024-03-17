@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["Homepage/Index","gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":"false","dgShowFileTree":"false","dgShowToc":"false"}
+{"dg-publish":true,"permalink":"/index/","tags":["Homepage/Index","gardenEntry","gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":"false","dgShowFileTree":"false","dgShowToc":"false"}
 ---
 
 
@@ -26,9 +26,9 @@
 - [![kr/기록/독후감/assets/하루 24시간 어떻게 살 것인가(초판본)(1910년 오리지널 초판본 표지디자인) - 아놀드 베넷/image/02d5cd79dfedbc29ae31dfd8d5329553_MD5.jpg|150](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%8F%85%ED%9B%84%EA%B0%90/assets/%ED%95%98%EB%A3%A8%2024%EC%8B%9C%EA%B0%84%20%EC%96%B4%EB%96%BB%EA%B2%8C%20%EC%82%B4%20%EA%B2%83%EC%9D%B8%EA%B0%80(%EC%B4%88%ED%8C%90%EB%B3%B8)(1910%EB%85%84%20%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%20%EC%B4%88%ED%8C%90%EB%B3%B8%20%ED%91%9C%EC%A7%80%EB%94%94%EC%9E%90%EC%9D%B8)%20-%20%EC%95%84%EB%86%80%EB%93%9C%20%EB%B2%A0%EB%84%B7/image/02d5cd79dfedbc29ae31dfd8d5329553_MD5.jpg)](<kr/기록/독후감/하루 24시간 어떻게 살 것인가(초판본)(1910년 오리지널 초판본 표지디자인) - 아놀드 베넷>)
 - [![kr/기록/독후감/assets/에디톨로지 - 김정운/image-20240107161320094.png|150](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%8F%85%ED%9B%84%EA%B0%90/assets/%EC%97%90%EB%94%94%ED%86%A8%EB%A1%9C%EC%A7%80%20-%20%EA%B9%80%EC%A0%95%EC%9A%B4/image-20240107161320094.png)](<kr/기록/독후감/에디톨로지 - 김정운>)
 - [![kr/기록/독후감/assets/죽은 경제학자의 살아있는 아이디어 - 토드 부크홀츠 (Todd G Buchholz)/b5e3140d233c9504df8529bb8146a02b_MD5.jpg|b5e3140d233c9504df8529bb8146a02b_MD5.jpg](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%8F%85%ED%9B%84%EA%B0%90/assets/%EC%A3%BD%EC%9D%80%20%EA%B2%BD%EC%A0%9C%ED%95%99%EC%9E%90%EC%9D%98%20%EC%82%B4%EC%95%84%EC%9E%88%EB%8A%94%20%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%20-%20%ED%86%A0%EB%93%9C%20%EB%B6%80%ED%81%AC%ED%99%80%EC%B8%A0%20(Todd%20G%20Buchholz)/b5e3140d233c9504df8529bb8146a02b_MD5.jpg)](<kr/기록/독후감/죽은 경제학자의 살아있는 아이디어 - 토드 부크홀츠 (Todd G Buchholz)>)
-- [![kr/기록/독후감/assets/장하준의 경제학 강의 - 장하준/image-20231008183103698.png|image-20231008183103698.png](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%8F%85%ED%9B%84%EA%B0%90/assets/%EC%9E%A5%ED%95%98%EC%A4%80%EC%9D%98%20%EA%B2%BD%EC%A0%9C%ED%95%99%20%EA%B0%95%EC%9D%98%20-%20%EC%9E%A5%ED%95%98%EC%A4%80/image-20231008183103698.png)](<kr/기록/독후감/장하준의 경제학 강의 - 장하준>)
 - [![kr/기록/assets/우연과 필연(궁리하는 과학 6) - 자크모노/image-20231004100306089.png|150](/img/user/kr/%EA%B8%B0%EB%A1%9D/assets/%EC%9A%B0%EC%97%B0%EA%B3%BC%20%ED%95%84%EC%97%B0(%EA%B6%81%EB%A6%AC%ED%95%98%EB%8A%94%20%EA%B3%BC%ED%95%99%206)%20-%20%EC%9E%90%ED%81%AC%EB%AA%A8%EB%85%B8/image-20231004100306089.png)](<kr/기록/독후감/우연과 필연(궁리하는 과학 6) - 자크모노>)
-- [![kr/기록/assets/자기 역사를 쓴다는 것 (역사의 흐름 속에서 개인이 삶을 기록하는 방법)/image/a8b4da3b102a07b35fe9ebd073a20715_MD5.jpg| 150](/img/user/kr/%EA%B8%B0%EB%A1%9D/assets/%EC%9E%90%EA%B8%B0%20%EC%97%AD%EC%82%AC%EB%A5%BC%20%EC%93%B4%EB%8B%A4%EB%8A%94%20%EA%B2%83%20(%EC%97%AD%EC%82%AC%EC%9D%98%20%ED%9D%90%EB%A6%84%20%EC%86%8D%EC%97%90%EC%84%9C%20%EA%B0%9C%EC%9D%B8%EC%9D%B4%20%EC%82%B6%EC%9D%84%20%EA%B8%B0%EB%A1%9D%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95)/image/a8b4da3b102a07b35fe9ebd073a20715_MD5.jpg)](<kr/기록/타치바나 다카시(立花隆)/자기 역사를 쓴다는 것 (역사의 흐름 속에서 개인이 삶을 기록하는 방법)>)
+- [![kr/기록/독후감/assets/장하준의 경제학 강의 - 장하준/image-20231008183103698.png|image-20231008183103698.png](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%8F%85%ED%9B%84%EA%B0%90/assets/%EC%9E%A5%ED%95%98%EC%A4%80%EC%9D%98%20%EA%B2%BD%EC%A0%9C%ED%95%99%20%EA%B0%95%EC%9D%98%20-%20%EC%9E%A5%ED%95%98%EC%A4%80/image-20231008183103698.png)](<kr/기록/독후감/장하준의 경제학 강의 - 장하준>)
+- [![kr/기록/assets/예루살렘의 아이히만/image-20230924151922064.png|150](/img/user/kr/%EA%B8%B0%EB%A1%9D/assets/%EC%98%88%EB%A3%A8%EC%82%B4%EB%A0%98%EC%9D%98%20%EC%95%84%EC%9D%B4%ED%9E%88%EB%A7%8C/image-20230924151922064.png)](<kr/기록/독후감/예루살렘의 아이히만>)
 
 { .block-language-dataview}
 </div>
@@ -37,11 +37,11 @@
 # Recent
 | Title                                                                                                                                                    | Cover                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [[kr/일기/2024-03-18\|2024-03-18]]                                                                                                                      | ![[kr/일기/assets/RX630 명령어 참고/Pasted image 20240318075130.png\|60]]                                                       |
 | [[kr/기록/논문/Paper Review - Memory Barriers a Hardware View for Software Hackers\|Paper Review - Memory Barriers a Hardware View for Software Hackers]] | ![[kr/기록/논문/assets/Paper Review - Memory Barriers a Hardware View for Software Hackers/image-20240126111231050.png\|60]] |
 | [[kr/일기/2024-03-04\|2024-03-04]]                                                                                                                      | ![[kr/일기/assets/2024-03-04/image-20240305191539238.png\|60]]                                                             |
 | [[kr/기록/독후감/권력과 진보 - 기술과 번영을 둘러싼 천년의 쟁투\|Power and Progress]]                                                                                         | \-                                                                                                                       |
 | [[kr/기록/독후감/하루 24시간 어떻게 살 것인가(초판본)(1910년 오리지널 초판본 표지디자인) - 아놀드 베넷\|하루 24시간 어떻게 살 것인가(초판본)(1910년 오리지널 초판본 표지디자인)]]                                     | ![[150\|60]]                                                                                                             |
-| [[kr/알고리즘/백준/Strongly Connected Component(2150)/Strongly Connected Component(2150)\|Strongly Connected Component(2150)]]                              | \-                                                                                                                       |
 
 { .block-language-dataview}
 
