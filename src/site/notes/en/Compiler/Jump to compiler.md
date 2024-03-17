@@ -1,13 +1,7 @@
 ---
-tags:
-  - Compiler/Jump_to_compiler
-created: 2024-01-18
-updated: 2024-01-18
-글확인: true
-번역확인: true
-dg-publish: true
-cover: "[[Screenshot 2024-02-13 at 21.32.39 (1).jpg]]"
+{"dg-publish":true,"permalink":"/en/Compiler/Jump to compiler/","tags":["Compiler/Jump_to_compiler"],"created":"2024-01-18","updated":"2024-01-18"}
 ---
+
 # Compiler
 ```c
 #include <stdio.h>
