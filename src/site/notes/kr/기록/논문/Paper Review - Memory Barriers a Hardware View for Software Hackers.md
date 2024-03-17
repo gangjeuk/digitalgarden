@@ -1,12 +1,7 @@
 ---
-created: 2024-01-26
-tags:
-  - paper-review
-글확인: true
-dg-publish: true
-updated: 2024-03-16
-cover: "[[image-20240126111231050.png]]"
+{"dg-publish":true,"permalink":"/kr/기록/논문/Paper Review - Memory Barriers a Hardware View for Software Hackers/","tags":["paper-review/hwViewForSwHackers"],"created":"2024-01-26","updated":"2024-03-16"}
 ---
+
 
 # 개요
 이 글은 논문 'Memory Barriers a Hardware View for Software Hackers'를 정리한 글임과 동시에 여러 동기화 문제가 근본적으로 왜 발생하고 어떻게 해결되는지에 대해서 다룬다.
@@ -380,3 +375,11 @@ Linux에서는 이러한 메모리 베리어에 대한 직접적인 컨트롤을
 또한 언어에 따라서 멀티 쓰레딩 기능을 지원하는 언어들이 늘어나고 있는데 이러한 언어들 또한 CPU의 아키텍처를 고려하지 않을 수 없다.
 
 그렇기 때문에 프로그래밍 언어들 또한 메모리 모델을 고려하여 기능들을 제공하고 있다.
+
+## 더 알아보기
+1. [Intel에서 제공하는 메모리 배리어 명령어는 뭐가 있을까?](https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-2b-manual.pdf)
+2. 소개한 논문 읽기에 도전!
+	1. 특히 논문에서 소개하는 CPU 중 SPARC 아키텍처에 대해서 자세히 읽어보기
+3. 추가로 읽으면 좋을지도??.. [[kr/운영체제/동기화의 본질 - SW와 HW 관점에서\|동기화의 본질 - SW와 HW 관점에서]]
+# Reference
+1. https://www.puppetmastertrading.com/images/hwViewForSwHackers.pdf
