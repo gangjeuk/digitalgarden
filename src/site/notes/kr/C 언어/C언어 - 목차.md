@@ -1,8 +1,7 @@
 ---
-dg-publish: true
-created: 2023-03-01
-cover: "[[image-20231128203335533.png]]"
+{"dg-publish":true,"permalink":"/kr/C 언어/C언어 - 목차/","created":"2023-03-01"}
 ---
+
 
 
 
@@ -20,4 +19,8 @@ cover: "[[image-20231128203335533.png]]"
 ---------------
 1. [[kr/C 언어/C언어 희귀한 문법 정리\|C언어 희귀한 문법 정리]]
 
-2. [[kr/C 언어/복잡한 포인터 해석하기\|복잡한 포인터 해석하기]]
+1. [[kr/C 언어/복잡한 포인터 해석하기\|복잡한 포인터 해석하기]]
+
+
+# Final project
+[아직 정리중](https://github.com/gangjeuk/Simple-Terminal-Ping-Pong)
