@@ -1,8 +1,7 @@
 ---
-dg-publish: true
-tags:
-  - OS/Index
+{"dg-publish":true,"permalink":"/kr/운영체제/OS - 목차/","tags":["OS/Index"]}
 ---
+
 
 
 # ![image-20231020162344029.png|18](/img/user/kr/data/icon/%EB%AA%A9%EC%B0%A8/image-20231020162344029.png) Newbie
