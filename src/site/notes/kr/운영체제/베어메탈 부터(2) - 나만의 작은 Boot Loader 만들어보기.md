@@ -1,12 +1,7 @@
 ---
-tags:
-  - OS/Basic/Baremetal2
-created: 2023-11-23
-글확인: true
-dg-publish: true
-cover: "[[image-20231128184134639.png]]"
-updated: 2023-11-23
+{"dg-publish":true,"permalink":"/kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기/","tags":["OS/Basic/Baremetal2"],"created":"2023-11-23","updated":"2023-11-23"}
 ---
+
 # Boot Loader 작성
 이제 Boot Loader를 직접 작성해 보자.
 
