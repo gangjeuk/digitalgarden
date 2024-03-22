@@ -1,14 +1,7 @@
 ---
-tags:
-  - OS/Bittervet/Event1
-  - TODO/페이지링크수정필요
-created: 2023-12-08
-글확인: true
-dg-publish: true
-updated: 2024-01-16
-cover: "[[Pasted image 20231216141316.png]]"
-번역확인: true
+{"dg-publish":true,"permalink":"/en/OS/Interrupt, Trap, Exception.. What's the difference - OS event(1)/","tags":["OS/Bittervet/Event1","TODO/페이지링크수정필요"],"created":"2023-12-08","updated":"2024-01-16"}
 ---
+
 # Event
 In this chapter, we'll learn about a really important concept in the operating system
 
