@@ -1,15 +1,7 @@
 ---
-tags:
-  - Computer-Science
-  - TODO/need_to_upload
-  - OS/Basic/BareMetal1
-created: 2023-11-07
-글확인: true
-dg-publish: true
-updated: 2023-11-18
-번역확인: true
-cover: "[[Pasted image 20231203165134.png]]"
+{"dg-publish":true,"permalink":"/en/OS/Let's start with Bare-metal(1) - How computer actually boot/","tags":["Computer-Science","TODO/need_to_upload","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
 ---
+
 
 
 # Baremetal
