@@ -1,12 +1,7 @@
 ---
-created: 2024-01-30
-tags:
-  - CTF/reamhack/multipoint
-글확인: true
-dg-publish: true
-updated: 2024-01-30
-cover:
+{"dg-publish":true,"permalink":"/kr/CTF/dreamhack/multipoint/","tags":["CTF/reamhack/multipoint"],"created":"2024-01-30","updated":"2024-01-30"}
 ---
+
 # 설명
 수학 행렬 연산이라는 특징을 알아내면 되는 문제.
 
