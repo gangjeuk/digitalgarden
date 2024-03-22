@@ -1,12 +1,7 @@
 ---
-tags:
-  - CTF/pwnable-kr/syscall
-created: 2023-11-29
-cover: "[[image-20231129115144726.png]]"
-dg-publish: true
-글확인: true
-updated: 2023-11-29
+{"dg-publish":true,"permalink":"/kr/CTF/pwnable.kr/syscall/","tags":["CTF/pwnable-kr/syscall"],"created":"2023-11-29","updated":"2023-11-29"}
 ---
+
 # 문제 코드
 ```c
 // adding a new system call : sys_upper
