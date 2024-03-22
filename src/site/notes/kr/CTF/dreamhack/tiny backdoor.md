@@ -1,12 +1,7 @@
 ---
-tags:
-  - CTF/dreamhack/tiny_backdoor
-  - pwnable
-created: 2023-12-14
-글확인: true
-dg-publish: true
-updated: 2023-12-14
+{"dg-publish":true,"permalink":"/kr/CTF/dreamhack/tiny backdoor/","tags":["CTF/dreamhack/tiny_backdoor","pwnable"],"created":"2023-12-14","updated":"2023-12-14"}
 ---
+
 # 풀이
 1byte의 값을 조작할 수 있는 취약점을 가지고 setbuf, fini_array 등을 잘 조작하면서 libc_base를 유출하고 shell 까지 얻으면 된다...
 
