@@ -1,7 +1,7 @@
 ---
-dg-publish: true
-cover: "[[Pasted image 20231118180909.png]]"
+{"dg-publish":true,"permalink":"/kr/지식나눔/tmux 사용법 정리/"}
 ---
+
 
 # 세션
 
