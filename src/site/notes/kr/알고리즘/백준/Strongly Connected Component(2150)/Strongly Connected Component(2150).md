@@ -1,10 +1,7 @@
 ---
-tags: 
-created: 2024-02-12
-글확인: true
-updated: 2024-02-12
-dg-publish: true
+{"dg-publish":true,"permalink":"/kr/알고리즘/백준/Strongly Connected Component(2150)/Strongly Connected Component(2150)/","created":"2024-02-12","updated":"2024-02-12"}
 ---
+
 [[kr/알고리즘/SCC(Strongly Connected Component) - 코사라주, 타잔 알고리즘\|SSC]] 개념 연습을 위해서 풀어본 문제.
 
 생각보다 구현이 힘들었다.
