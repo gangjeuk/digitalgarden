@@ -1,14 +1,7 @@
 ---
-tags:
-  - OS/Bittervet/Event1
-  - TODO/페이지링크수정필요
-created: 2023-12-08
-글확인: true
-dg-publish: true
-updated: 2023-12-22
-cover: "[[Pasted image 20231216134833.png]]"
-번역확인: true
+{"dg-publish":true,"permalink":"/jp/OS/割り込み、トラップ、例外。。。結論はイベントーOSイベント(1)/","tags":["OS/Bittervet/Event1","TODO/페이지링크수정필요"],"created":"2023-12-08","updated":"2023-12-22"}
 ---
+
 # イベント
 この章では、オペレーティングシステムで本当に重要な概念であるイベントについて学びましょう。
 
