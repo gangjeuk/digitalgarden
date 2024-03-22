@@ -1,14 +1,7 @@
 ---
-created: 2023-11-18
-tags:
-  - OS/Hacker/Virtualization
-  - TODO/페이지링크수정필요
-글확인: true
-dg-publish: true
-cover: "[[image-20231128202415508.png]]"
-updated: 2023-11-28
-번역확인: true
+{"dg-publish":true,"permalink":"/jp/OS/作りながら理解する仮想化、（QEMUとKVMのコードを中心に）/","tags":["OS/Hacker/Virtualization","TODO/페이지링크수정필요"],"created":"2023-11-18","updated":"2023-11-28"}
 ---
+
 
 
 
