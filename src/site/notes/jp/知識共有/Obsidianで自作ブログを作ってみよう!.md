@@ -1,12 +1,7 @@
 ---
-created: 2023-12-30
-updated: 2023-12-30
-tags:
-  - Tips/Obsidian_digital_garden
-글확인: true
-dg-publish: true
-번역확인: true
+{"dg-publish":true,"permalink":"/jp/知識共有/Obsidianで自作ブログを作ってみよう!/","tags":["Tips/Obsidian_digital_garden"],"created":"2023-12-30","updated":"2023-12-30"}
 ---
+
 簡単に私が現在使っているブログの構成を共有するために記事を作成しました。
 
 もしまだObsidianに詳しくない人の場合は下のコメントを最後まで読めばいいし、すぐに設定方法だけ知りたい人は[[jp/知識共有/Obsidianで自作ブログを作ってみよう!#構成開始\|ここ]]から読めばいいです。
