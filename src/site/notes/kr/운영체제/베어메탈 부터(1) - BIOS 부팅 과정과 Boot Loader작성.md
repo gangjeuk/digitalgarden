@@ -1,13 +1,7 @@
 ---
-tags:
-  - Computer-Science
-  - OS/Basic/BareMetal1
-created: 2023-11-07
-글확인: true
-dg-publish: true
-updated: 2023-11-18
-cover: "[[Pasted image 20231203165134.png]]"
+{"dg-publish":true,"permalink":"/kr/운영체제/베어메탈 부터(1) - BIOS 부팅 과정과 Boot Loader작성/","tags":["Computer-Science","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
 ---
+
 
 # 베어메탈
 베어 메탈이란 아래와 같이 정의 된다.
