@@ -1,13 +1,7 @@
 ---
-created: 2023-11-18
-tags:
-  - OS/Hacker/Virtualization
-글확인: true
-dg-publish: true
-cover: "[[image-20231128202415508.png]]"
-updated: 2023-11-28
-번역확인: true
+{"dg-publish":true,"permalink":"/en/OS/Virtualization - Review QEMU & KVM code and Make your own QEMU/","tags":["OS/Hacker/Virtualization"],"created":"2023-11-18","updated":"2023-11-28"}
 ---
+
 
 
 
