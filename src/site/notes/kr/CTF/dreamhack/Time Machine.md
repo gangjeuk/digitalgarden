@@ -1,12 +1,7 @@
 ---
-tags:
-  - reversing
-  - code-virtualize
-created: 2023-07-14
-updated: 2023-07-14
-글확인: true
-dg-publish: true
+{"dg-publish":true,"permalink":"/kr/CTF/dreamhack/Time Machine/","tags":["reversing","code-virtualize"],"created":"2023-07-14","updated":"2023-07-14"}
 ---
+
 
 # Reference
 
