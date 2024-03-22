@@ -1,13 +1,7 @@
 ---
-tags:
-  - TODO/got_plt_tls_파일내용과_같이_검토_필요
-  - CTF/basic/ELF
-created: 2023-10-10
-글확인: true
-dg-publish: true
-updated: 2023-11-14
-cover: "[[image-20231010161636907.png]]"
+{"dg-publish":true,"permalink":"/kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지/","tags":["TODO/got_plt_tls_파일내용과_같이_검토_필요","CTF/basic/ELF"],"created":"2023-10-10","updated":"2023-11-14"}
 ---
+
 # Reference
 [[ELF-64 Object File Format.pdf]]
 [[ELF-64 Object File Format, Version 1.4 1 ELF-64 Object File Format Including HP and HP-UX Extensions.pdf]]
