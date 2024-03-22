@@ -1,13 +1,7 @@
 ---
-tags:
-  - CTF/basic/ELF
-created: 2023-10-10
-글확인: true
-dg-publish: true
-번역확인: true
-updated: 2023-11-14
-cover: "[[image-20231010161636907.png]]"
+{"dg-publish":true,"permalink":"/en/CTF/Basic/ELF Explained - From structure to Relocation & Linking/","tags":["CTF/basic/ELF"],"created":"2023-10-10","updated":"2023-11-14"}
 ---
+
 # Reference
 
 https://www.sco.com/developers/gabi/2012-12-31/contents.html
