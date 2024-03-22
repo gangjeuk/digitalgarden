@@ -1,8 +1,7 @@
 ---
-created: 2023-04-11
-dg-publish: true
-cover: "[[image-20231101191458108.png]]"
+{"dg-publish":true,"permalink":"/kr/지식나눔/Linux cmd/Bash/","created":"2023-04-11"}
 ---
+
 
 
 
@@ -203,8 +202,8 @@ if (( $val1 ** 2 > 90 )); then
 
 이중 대괄호 명령은 문자열 비교에 대한 고급 기능을 제공한다
 ```
-[[ expression \| expression ]] --> 테스트 명령 평가의 표준 문자열 비교를 사용한다 + 패턴 일치를 제공
-if [[ $USER == r* \| $USER == r* ]] 
+[[ expression ]] --> 테스트 명령 평가의 표준 문자열 비교를 사용한다 + 패턴 일치를 제공
+if [[ $USER == r* ]] 
 ```
 와 같이 사용 가능 하다.
 
