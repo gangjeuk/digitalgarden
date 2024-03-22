@@ -1,10 +1,7 @@
 ---
-created: 2023-11-11
-tags:
-  - Tips/LazyVim
-dg-publish: true
-cover: "[[image-20231111185327420.png]]"
+{"dg-publish":true,"permalink":"/kr/지식나눔/LazyVim 설치 및 설정하기/","tags":["Tips/LazyVim"],"created":"2023-11-11","updated":"2023-11-11"}
 ---
+
 
 
 
