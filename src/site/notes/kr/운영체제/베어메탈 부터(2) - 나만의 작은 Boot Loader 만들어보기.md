@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기/","tags":["OS/Basic/Baremetal2"],"created":"2023-11-23","updated":"2023-11-23"}
+{"dg-publish":true,"permalink":"/kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기/","tags":["OS/Basic/Baremetal2"],"created":"2023-11-23","updated":"2024-03-24"}
 ---
 
 # Boot Loader 작성
@@ -16,11 +16,11 @@
 ### 주소지정
 Real mode는 16bit 모드이고 레지스터가 가질 수 있는 최대값이 0xFFFF 인 것을 알 수 있다.
 
-(즉, 16bit 컴퓨터에서 사용할 수 있는 메모리의 최대 크기가 64KB(65,636 bytes)인 것이다)
+즉, 16bit 컴퓨터에서 사용할 수 있는 메모리의 최대 크기가 64KB(65,636 bytes) 이라는 것을 의미한다.
 
-저번 시간에 살펴본 비디오 메모리 주소인 0xB8000 보다 훨씬 작은 것을 알 수 있다.
+이값은, 저번 시간에 살펴본 비디오 메모리 주소인 0xB8000 보다 훨씬 작은 것을 알 수 있다.
 
-x86의 Real Mode의 경우 세그먼트 레지스터를 이용해서 최대 20bit 까지 주소를 지정할 수 있게 디자인 되었다.
+실제 x86의 Real Mode의 경우 세그먼트 레지스터를 이용해서 최대 20bit 까지 주소를 지정할 수 있게 디자인 되었다.
 
 즉 최대 1MB 만큼의 메모리를 사용할 수 있게 해 두었다.
 
@@ -31,7 +31,7 @@ mov byte [ es: si ], 1
 ```
 여기서 `es`는 Extra Segment를 의미하고 `si`는 Index Register이다.
 
-이러한 세그먼트 레이즈터와 다른 레지스터를 이용해서 주소를 지정할 수 있다.
+이러한 세그먼트 레지스터와 다른 레지스터를 이용해서 주소를 지정할 수 있다.
 
 실제 계산 방법은 아래와 같다.
 ![Pasted image 20231129213052.png|center round|600](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EB%B2%A0%EC%96%B4%EB%A9%94%ED%83%88%20%EB%B6%80%ED%84%B0(2)%20-%20%EB%82%98%EB%A7%8C%EC%9D%98%20%EC%9E%91%EC%9D%80%20Boot%20Loader/Pasted%20image%2020231129213052.png)
@@ -46,9 +46,9 @@ $$
 ### Far jump - x86 JMP Instruction
 위에서 보았던 세그먼트 레지스터를 이용해서 주소를 확장해 사용하는 것이 x86의 특징 중 하나이다, 그리고 이러한 특징과 깊은 연관이 있는 명령이 바로 `jmp`이다.
 
-x86에는 기본적으로 현재 주소에서의 상대 주소(relative), 절대 주소(absolute)와 함께 조건에 따른 점프(conditional), 레지스트리를 이용한 점프(register-indirect) 가 존재한다.
+x86에서의 주소 지정은, 현재 주소에서의 상대 주소(relative), 절대 주소(absolute)로 나뉘어 진다.
 
-여기서 살펴보아야 할 주소 지정 방식은 절대 주소방식에서도 다음과 같은 문법이다.
+여기서 살펴보아야 할 주소 지정 방식은 절대 주소방식 중에서도 다음과 같은 문법이다.
 
 ```c
 jmp 0x07C0:START
@@ -59,7 +59,7 @@ Instruction Pointer 레지스터가 오른쪽의 값(`START`)으로 지정되고
 다음으로 어셈블러 전용 문법을 몇 개 살펴보고 코드 작성을 시작해 보자.
 ### 구문
 1. \[ORG 0x0\]: 코드의 시작 지점을 0x0로 설정
-2. \[BITS 16\]: 16bit 코드(Real Mode)의 코드인 것을 지정
+2. \[BITS 16\]: 16bit 코드(Real Mode 코드)인 것을 지정
 
 ### 토큰
 `$`과 `$$`는 NASM에서 특이한 의미를 가지는 토큰이다.
@@ -160,13 +160,13 @@ QEMU는 앞서 말했듯이 가상의 컴퓨터를 만들어 주는 프로그램
 - -m 10: 10MB 메모리를 사용
 - -fda: 플로핏 디스크 파일을 지정
 
-즉, 우리가 작성한 코드(`bootloader.bin`)를 플로핏 디스크에 쓰고 그것을 컴퓨터에 넣는 과정을 대신 해주는 것이다!!(
+즉, 우리가 작성한 코드(`bootloader.bin`)를 플로핏 디스크에 쓰고 그것을 컴퓨터에 넣는 과정을 대신 해주는 것이다!!
 
 
 ![Pasted image 20231201104620.png|center round|700](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EB%B2%A0%EC%96%B4%EB%A9%94%ED%83%88%20%EB%B6%80%ED%84%B0(2)%20-%20%EB%82%98%EB%A7%8C%EC%9D%98%20%EC%9E%91%EC%9D%80%20Boot%20Loader/Pasted%20image%2020231201104620.png)
 \[QEMU를 이용해서 위의 그림을 대체할 수 있다.\]
 
-실행 결과 아래와 같이 표시되는 것을 확인 가능했다.
+실행 결과 아래와 같이 표시되는 것을 확인 가능하다.
 ![image-20231128184134639.png|center round|500](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/image-20231128184134639.png)
 
 
