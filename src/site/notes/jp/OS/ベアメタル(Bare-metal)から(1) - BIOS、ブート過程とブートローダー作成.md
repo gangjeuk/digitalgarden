@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/jp/OS/ベアメタル(Bare-metal)から(1) - BIOS、ブート過程とブートローダー作成/","tags":["Computer-Science","TODO/need_to_upload","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
+{"dg-publish":true,"permalink":"/jp/OS/ベアメタル(Bare-metal)から(1) - BIOS、ブート過程とブートローダー作成/","tags":["Computer-Science","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
 ---
 
 
@@ -179,7 +179,7 @@ RAMだけでは物足りないので、他のハードウェアを追加して�
 第二に、BIOSは指定されたアドレスにジャンプし、私たち(または、あなたが作ったコードを動作させます!!)！
 
 図で表すと次のようになります。
-![image-20231107143135220.png|center round|700](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EB%B2%A0%EC%96%B4%EB%A9%94%ED%83%88%20%EB%B6%80%ED%84%B0(1)%20-%20BIOS%20%EB%B6%80%ED%8A%B8%20Boot%20Loader%EA%B9%8C%EC%A7%80/image-20231107143135220.png)!
+![image-20231107143135220.png|center round|700](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EB%B2%A0%EC%96%B4%EB%A9%94%ED%83%88%20%EB%B6%80%ED%84%B0(1)%20-%20BIOS%20%EB%B6%80%ED%8A%B8%20Boot%20Loader%EA%B9%8C%EC%A7%80/image-20231107143135220.png)
 ![image-20231107143202779.png|center round|700](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EB%B2%A0%EC%96%B4%EB%A9%94%ED%83%88%20%EB%B6%80%ED%84%B0(1)%20-%20BIOS%20%EB%B6%80%ED%8A%B8%20Boot%20Loader%EA%B9%8C%EC%A7%80/image-20231107143202779.png)![image-20231107143202779.png|center round|700](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EB%B2%A0%EC%96%B4%EB%A9%94%ED%83%88%20%EB%B6%80%ED%84%B0(1)%20-%20BIOS%20%EB%B6%80%ED%8A%B8%20Boot%20Loader%EA%B9%8C%EC%A7%80/image-20231107143202779.png)![image-20231107143801801.png|center round|700](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EB%B2%A0%EC%96%B4%EB%A9%94%ED%83%88%20%EB%B6%80%ED%84%B0(1)%20-%20BIOS%20%EB%B6%80%ED%8A%B8%20Boot%20Loader%EA%B9%8C%EC%A7%80/image-20231107143801801.png) 
 
 このような過程を経て、Floppy disk、USB、HDDなどの記録装置に保存されたコードが初めてコンピュータで実行されます。
