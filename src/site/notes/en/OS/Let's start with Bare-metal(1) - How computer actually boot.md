@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/en/OS/Let's start with Bare-metal(1) - How computer actually boot/","tags":["Computer-Science","TODO/need_to_upload","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
+{"dg-publish":true,"permalink":"/en/OS/Let's start with Bare-metal(1) - How computer actually boot/","tags":["Computer-Science","OS/Basic/BareMetal1"],"created":"2023-11-07","updated":"2023-11-18"}
 ---
 
 
