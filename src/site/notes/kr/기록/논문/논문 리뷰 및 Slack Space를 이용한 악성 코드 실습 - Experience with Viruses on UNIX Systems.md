@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/기록/논문/논문 리뷰 및 Slack Space를 이용한 악성 코드 실습 - Experience with Viruses on UNIX Systems/","tags":["practice","paper-review","malware","TODO/translate"],"created":"2023-08-08","updated":"2023-09-15"}
+{"dg-publish":true,"permalink":"/kr/기록/논문/논문 리뷰 및 Slack Space를 이용한 악성 코드 실습 - Experience with Viruses on UNIX Systems/","tags":["practice","paper-review","malware","TODO/translate"],"created":"2023-08-08","updated":"2024-04-10"}
 ---
 
 
