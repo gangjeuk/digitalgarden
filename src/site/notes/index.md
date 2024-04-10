@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/index/","tags":["Homepage/Index","gardenEntry","gardenEntry","gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":"false","dgShowFileTree":"false","dgShowToc":"false"}
+{"dg-publish":true,"permalink":"/index/","tags":["Homepage/Index","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"dgShowBacklinks":"false","dgShowLocalGraph":"false","dgShowFileTree":"false","dgShowToc":"false"}
 ---
 
 
@@ -9,12 +9,12 @@
 # Study
 <div class="study-covers">
 
+- [![kr/기록/논문/assets/Slack Space를 이용한 악성 코드/Pasted image 20240410124433.png|Pasted image 20240410124433.png](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%85%BC%EB%AC%B8/assets/Slack%20Space%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%95%85%EC%84%B1%20%EC%BD%94%EB%93%9C/Pasted%20image%2020240410124433.png)](</kr/기록/논문/논문 리뷰 및 Slack Space를 이용한 악성 코드 실습 - Experience with Viruses on UNIX Systems>)<div class=content-name>논문 리뷰 및 Slack Space를 이용한 악성 코드 실습 - Experience with Viruses on UNIX Systems</div><div class=content-tags>#practice, #paper-review, #malware</div>
 - [![kr/운영체제/assets/가상화, QEMU와 KVM코드를 중심으로 보기(QEMU 만들어 보기)/image-20231128184134639.png|image-20231128184134639.png](/img/user/kr/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C/assets/%EA%B0%80%EC%83%81%ED%99%94,%20QEMU%EC%99%80%20KVM%EC%BD%94%EB%93%9C%EB%A5%BC%20%EC%A4%91%EC%8B%AC%EC%9C%BC%EB%A1%9C%20%EB%B3%B4%EA%B8%B0(QEMU%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EA%B8%B0)/image-20231128184134639.png)](</kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기>)<div class=content-name>베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기</div><div class=content-tags>#OS/Basic/Baremetal2</div>
 - [![kr/기록/논문/assets/Paper Review - Memory Barriers a Hardware View for Software Hackers/image-20240126111231050.png|image-20240126111231050.png](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%85%BC%EB%AC%B8/assets/Paper%20Review%20-%20Memory%20Barriers%20a%20Hardware%20View%20for%20Software%20Hackers/image-20240126111231050.png)](</kr/기록/논문/논문 리뷰 - Memory Barriers a Hardware View for Software Hackers>)<div class=content-name>논문 리뷰 - Memory Barriers a Hardware View for Software Hackers</div><div class=content-tags>#paper-review/hwViewForSwHackers</div>
 - [![kr/컴퓨터 공학 기초/assets/컴퓨터 공학 총 정리/Pasted image 20240212212808.png|Pasted image 20240212212808.png](/img/user/kr/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B3%B5%ED%95%99%20%EA%B8%B0%EC%B4%88/assets/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B3%B5%ED%95%99%20%EC%B4%9D%20%EC%A0%95%EB%A6%AC/Pasted%20image%2020240212212808.png)](</kr/컴퓨터 공학 기초/컴퓨터 공학 총 정리>)<div class=content-name>컴퓨터 공학 총 정리</div><div class=content-tags>#Computer-Science</div>
 - [\-](</kr/알고리즘/백준/Strongly Connected Component(2150)/Strongly Connected Component(2150)>)<div class=content-name>Strongly Connected Component(2150)</div><div class=content-tags></div>
 - [\-](</kr/알고리즘/백준/합분해(2225)/합분해(2225)>)<div class=content-name>합분해(2225)</div><div class=content-tags></div>
-- [\-](</kr/알고리즘/백준/자두나무(2240)/자두나무(2240)>)<div class=content-name>자두나무(2240)</div><div class=content-tags></div>
 
 { .block-language-dataview}
 </div>
@@ -35,13 +35,13 @@
 
 
 # Recent
-| Title                                                                                                                                      | Cover                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| [[kr/기록/독후감/제노사이드 - 다카노 가즈아키\|제노사이드]]                                                                                                   | ![[kr/기록/독후감/assets/제노사이드 - 다카노 가즈아키/image/ff0c8ebb4b0c50c7a87de2716e96588c_MD5.jpg\|60]]                                |
-| [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기\|베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기]]                                                | ![[kr/운영체제/assets/가상화, QEMU와 KVM코드를 중심으로 보기(QEMU 만들어 보기)/image-20231128184134639.png\|60]]                               |
-| [[kr/일기/2024-03-18\|2024-03-18]]                                                                                                        | ![[kr/일기/assets/RX630 명령어 참고/Pasted image 20240318075130.png\|60]]                                                       |
-| [[kr/기록/논문/논문 리뷰 - Memory Barriers a Hardware View for Software Hackers\|논문 리뷰 - Memory Barriers a Hardware View for Software Hackers]] | ![[kr/기록/논문/assets/Paper Review - Memory Barriers a Hardware View for Software Hackers/image-20240126111231050.png\|60]] |
-| [[kr/일기/2024-03-04\|2024-03-04]]                                                                                                        | ![[kr/일기/assets/2024-03-04/image-20240305191539238.png\|60]]                                                             |
+| Title                                                                                                                                                                    | Cover                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| [[kr/기록/논문/논문 리뷰 및 Slack Space를 이용한 악성 코드 실습 - Experience with Viruses on UNIX Systems\|논문 리뷰 및 Slack Space를 이용한 악성 코드 실습 - Experience with Viruses on UNIX Systems]] | ![[kr/기록/논문/assets/Slack Space를 이용한 악성 코드/Pasted image 20240410124433.png\|60]]                                          |
+| [[kr/기록/독후감/제노사이드 - 다카노 가즈아키\|제노사이드]]                                                                                                                                 | ![[kr/기록/독후감/assets/제노사이드 - 다카노 가즈아키/image/ff0c8ebb4b0c50c7a87de2716e96588c_MD5.jpg\|60]]                                |
+| [[kr/운영체제/베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기\|베어메탈 부터(2) - 나만의 작은 Boot Loader 만들어보기]]                                                                              | ![[kr/운영체제/assets/가상화, QEMU와 KVM코드를 중심으로 보기(QEMU 만들어 보기)/image-20231128184134639.png\|60]]                               |
+| [[kr/일기/2024-03-18\|2024-03-18]]                                                                                                                                      | ![[kr/일기/assets/RX630 명령어 참고/Pasted image 20240318075130.png\|60]]                                                       |
+| [[kr/기록/논문/논문 리뷰 - Memory Barriers a Hardware View for Software Hackers\|논문 리뷰 - Memory Barriers a Hardware View for Software Hackers]]                               | ![[kr/기록/논문/assets/Paper Review - Memory Barriers a Hardware View for Software Hackers/image-20240126111231050.png\|60]] |
 
 { .block-language-dataview}
 
