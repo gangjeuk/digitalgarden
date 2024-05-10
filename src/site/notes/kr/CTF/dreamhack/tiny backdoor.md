@@ -14,7 +14,7 @@
 
 - https://libc.rip/ 
 
-[[kr/CTF/Basic/ELF 파일 형식에서 재배치(Relocation), 링킹(Linking) 까지\|또 got와 plt 등 ELF에 관한 내용을 공부하면 풀기 쉬울지도?]]
+[[kr/CTF/Basic/ELF 파일 구조 설명에서부터 재배치(Relocation), 링킹(Linking) 까지\|또 got와 plt 등 ELF에 관한 내용을 공부하면 풀기 쉬울지도?]]
 # POC
 ```embed-python
 PATH: 'vault://data/dreamhack/tiny backdoor/answer.py'
