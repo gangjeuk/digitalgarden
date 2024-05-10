@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/kr/C 언어/C언어 희귀한 문법 정리/","tags":["C_Lang/Hacker/RarePattern"],"created":"2023-10-23","updated":"2023-11-15"}
+{"dg-publish":true,"permalink":"/kr/C 언어/C언어 희귀한 문법 정리/","tags":["C_Lang/Hacker/RarePattern"],"created":"2023-10-23","updated":"2024-04-16"}
 ---
 
 
@@ -7,6 +7,13 @@
 잘 보이진 않지만 가끔씩 보이는 C 언어 문법을 정리.
 
 # C 언어
+
+## 구조체 지정 초기화(designated initializer)
+
+### 예시
+```c
+struct human me = {.name = "Hong", .age = 20}
+```
 ## :n - bit field 선언자(declaration)
 
 ### 예시
