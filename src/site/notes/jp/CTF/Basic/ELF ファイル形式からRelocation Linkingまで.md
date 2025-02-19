@@ -8,6 +8,7 @@
 https://www.sco.com/developers/gabi/2012-12-31/contents.html
 https://intezer.com/blog/malware-analysis/executable-and-linkable-format-101-part-3-relocations/
 https://docs.oracle.com/cd/E19683-01/817-3677/chapter6-42444/index.html
+https://www.cs.cmu.edu/afs/cs/academic/class/15213-f00/docs/elf.pdf
  
 # ELF Format
 ELF(Executable and Linking Format)は代表的に3つのタイプのタイプがあります。
