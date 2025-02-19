@@ -10,7 +10,7 @@
 [AhnLab | 보안 이슈](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?seq=17907)
 
 # 내용
-![Pasted image 20240410124433.png|center](/img/user/kr/%EA%B8%B0%EB%A1%9D/%EB%85%BC%EB%AC%B8/assets/Slack%20Space%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%95%85%EC%84%B1%20%EC%BD%94%EB%93%9C/Pasted%20image%2020240410124433.png)
+![[Pasted image 20240410124433.png|200|center]]
 
 파일 시스템 공부 중, 슬랙 공간을 바이러스가 있을 수 있다는 글이 많이 보여 조사한 결과를 보고.
 
